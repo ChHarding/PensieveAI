@@ -1,0 +1,608 @@
+﻿Transcript P2_Interview
+March  18, 2024, 12:10AM
+
+
+Shristi started transcription
+
+Kadir   0:15
+OK, perfect. So.
+Can you tell us a little bit about yourself, if possible?
+
+P2   0:25
+Little about myself?
+Kadir   0:27
+Yes, yes.
+
+P2   0:27
+OK, so I'm a graduate student here, here at the [a US university], and now graduating this year.
+So I'm doing my civil engineering masters in civil engineering with an emphasis on Geotechnical engineering. I think I have been using Snapchat for the past three years. If you want to know.
+
+Kadir   0:50
+Wow. Past three years, it's been quite a few kind of like experience probably it seems alright So then could you also tell me what social media platforms do you use other than, let's say, in this case, Snapchat?
+
+P2   1:10
+Uh, so Instagram. Facebook, mostly on Instagram and mostly Instagram. Other than that, Facebook, sometimes with Twitter, and that's all. If LinkedIn counts as social media, I did that while I was searching for jobs, but not anymore.
+
+Kadir   1:28
+So we get an Instagram. Facebook OK. Yeah, that's that's fair. So. When when did you start using Snapchat? Uh.
+
+P2   1:46
+So yeah, it was like back and forth when I when I was back in [a South Asian Country]. So I usually use for like one month and then the not use that for like one year and then again come back.
+But after I came to US like it's been like 2 years, most probably. So I've been like continuously using it for the past two years.I would say.
+
+Kadir   2:05
+No. OK. So just. Is there any umm what makes a continuous use in the US for Snapchat?
+Is there any kind of like reason for?
+
+P2   2:18
+And now, and there's not, not not this kind of disparity while competing with [a South Asian Country] and US, but just that when I am in the US, I could like connect with my friends, move through Snapchat with home in [a South Asian Country] So back back when I was in [a South Asian Country], I didn't didn't need to do that because I was actually there. So that makes it easy to like...
+
+Kadir   2:36
+OK, OK. Yeah.
+
+P2   2:37
+..know what they're doing like in their daily life. And like you know about their situations, where it's pretty fun.
+
+Kadir   2:43
+Yeah, I got it. That makes sense. That makes sense. I relate to that for sure.
+
+P2   2:49
+Yeah.
+
+Kadir   2:50
+What do you do most on on the on the Snapchat then could you tell us a little bit?
+
+P2   2:56
+Yeah. So. So I'm like pretty much print circle like there are like two or three groups one those group that I used to hang out in [a South Asian Country]l. So that is my most prominent group or the group where I am actually the most. So just so anything you're doing in your daily life, if it, if it is fun, or even if it's like normal, just pick a picture and then say something and just send them to your friends and they will react probably. Or just watch it and just reply it on their own. So yeah, it's kind of like to. So what you're doing on a bit daily basis, so it's kind of fun.
+
+Kadir   3:28
+OK, sharing, sharing, maybe sharing your life on a daily basis and then getting getting to know what others are doing as well.
+
+P2   3:32
+Yeah, yeah, that post. Wasting your story on Instagram or post on Instagram is like too much of a job, so we Snapchat this kinda like easier version for that one. If you want like really keep it small, your friends circle, yeah.
+
+Kadir   3:45
+OK, OK. Yeah, I I got it. And yeah, I mean, in terms of my AI feature, when and why did you, why did you start using my AI feature on Snapchat?
+
+P2   4:02
+Uh, so when it was first released, I don't know when it was exactly, but I think it has been like one year or so. I don't know exactly, so I just tried to play play, play around with that when it was first released, but to be honest, after that I haven't really used this before this program or before your project.
+
+Kadir   4:10
+Umm.
+
+P2   4:22
+So yeah, I don't have very much experience than you guys as well, so.
+
+Kadir   4:22
+Umm.
+Yeah, but just I wanna clarify before we asked you, you, you used it before, right? And then it was.
+
+P2   4:32
+Yeah. Yeah, yeah, yeah. I used it before here.
+
+Kadir   4:35
+Yeah. OK. So is it was it visible to you easily when when it?
+
+P2   4:39
+Yeah, yeah, yeah, it it remain remains on the top of your chat field whenever you Instagram.
+
+Kadir   4:44
+Umm.
+
+P2   4:45
+So it was like kind of in the plane sight all the time butI I haven't really used it.
+
+Kadir   4:53
+OK, OK. Uh, so it seems. Possibly with our study you, uh, maybe made more experiences with MyAI feature.
+
+P2   5:07
+Yeah. Yeah, I did.
+
+Kadir   5:08
+Uh, yeah.
+
+P2   5:08
+I did.
+
+Kadir   5:09
+So then can you walk us, can you walk us through an example of how you used it? I mean it could be related to what you did during our study or it could be related to before it wasn't related to the study.
+
+P2   5:21
+Yeah. Yeah, I'm gonna. I'm going to take a look at the screenshots right now because I forgot what you first was. What was the first task? If you can remind me.
+
+Kadir   5:34
+I think we asked you to have a travel recommendation.
+
+P2   5:39
+Yeah, yeah, yeah. This was the one that I liked the most, so I didn't think that it would like do something like this. So I just asked it like I want to just pick spend three nights and four days.
+I have this much budget and I like nature, so can you please plan a trip for me then? Then the first answer was kind of like a decent one. It was not that detailed, but I asked it to again, like going to the detail and give me a full itinerary.
+
+Kadir   5:58
+Umm.
+
+P2   6:03
+It give me a full itinerary of like day one, day, two, day three, day four, even with all the pricing.
+So I..I was kind of like I didn't check if the pricings were correct or not, but still this was like really good experience for me. So if you have like less time on planning the travel then it could be really helpful thing.
+
+Kadir   6:20
+Ohh OK, so it was initially not that much detail, but later gave more details.
+
+P2   6:27
+Yeah, yeah, yeah.
+
+Kadir   6:27
+OK. Yeah, it was for the travel one. OK. So is it normally have you use it or is it? Was it something a different experience with that first task?
+
+P2   6:40
+No, to this kind of like similar to what I usually do when I am using generative AI. So first of all I try to get a little bit of information and then if it provides me with the correct results and then I tried to go into the details. So it was like very similar to this one as well. So I think that this is how it usually goes when I try to like search anything on Snapchat.
+
+Kadir   6:59
+OK, OK. So then have you ever found MyAI useful? During this study or during your prior experiences.
+
+P2   7:16
+My prior experience will I I once played a game with MyAI based on like prior to what you guys sent me before you what you guys sent me. I I played the "guess the country's flag" game with it, and I added fun. I had to kill the time in the in the airport at sometimes. So at that time, so it was really fun. And I think that's all I have.
+
+Kadir   7:34
+Umm.
+
+P2   7:36
+It's like kind of. It's not like as usable as ChatGPT, I must say, but just to like have something on your phone to like type and can play with, so it's it's kind of cool.
+
+Kadir   7:47
+Yeah. OK, so it means more like maybe I don't know, like kill time at the time and then.
+
+P2   7:53
+You're saying like like a friendly suggestion or something like that. If you just need to like fool around. Maybe. Yeah, but after your study, after this project that you guys asked me to do with along with you. So I feel like it can like use them more, use it any other ways as well so using a better way than just fool around with it.
+
+Kadir   8:08
+Mm-hmm. So. So just, uh, you brought ChatGPT into conversation. What makes I mean in terms of usefulness? ChatGPT versus my AI different on your experience?
+
+P2   8:31
+OK, so to be honest, so I use this on my phone. And ChatGPT, mostly on my laptop, so whenever I'm working on my thesis or something like that. So it's really accessible to just open another tab and just type..just use ChatGPT instead of like try to like type in the phone and ask it. Ask the MyAI feature on Snapchat. So yeah, ChatGPT is like more accessible for me. So that's why I mentioned and is the most used AI feature that I've used till now. So I just had a quick comparison between these two.
+
+Kadir   9:01
+Hmm. OK. Yeah, so. Can you share an experience where MyAI met your expectations?
+
+P2   9:17
+With my expectations, OK, so.
+
+Kadir   9:20
+Mm-hmm.
+
+P2   9:24
+Umm. Let's see. I'm gonna. I'm going over the project tasks. You gave me the task, so the last task was asking about a photo right, photo or sticker.
+
+Kadir   9:37
+Yes.
+
+P2   9:39
+It didn't perform that well on this one. So I think the first the first tasks that you give like plan a holiday or vacation like that was the most accurate and like most detailed part that I received from the GPT because other than that the shopping task was a failure for me because I wanted to like try and ask them to ask, yeah, MyAI to like give me first suggestion on soccer cleats but didn't like it, didn't like provide like such great information on that.
+And also the last one asking with the picture I sent them a picture of a dish called Momo in [a South Asian Country]. It didn't recognize that and also like it has like some other I would do it, period.
+It's going like provide much information about there.
+So I think the vacation one was like pretty well planned or I received like very good feedback from MyAI. So, that was the best one and I must say the asking about the picture was the worst one.
+
+Kadir   10:41
+The first one.
+
+P2   10:42
+Yeah. The first one was the. Yeah, it was the best one.
+
+Kadir   10:46
+The the most useful. OK, the most which kind of met your expectations, got it.
+
+P2   10:52
+Yeah, yeah, yeah, absolutely.
+
+Kadir   10:54
+Yeah, I mean, I remember in that one it gave a place to you from Colorado as far as I remember.
+
+P2   11:03
+I..I think it was. Yeah. I asked it for like suggestion for a natural place, so I think Rocky, Rocky Mountains.
+
+Kadir   11:10
+Rocky mountains.
+
+P2   11:11
+Yeah.
+
+Kadir   11:14
+So do you think is that place whereas more like based on your I mean?
+
+P2   11:20
+That's where I would go. Yeah, absolutely.
+I gave it a prompt saying that I like nature, beaches and anything else except the city life.
+
+Kadir   11:23
+OK.
+
+P2   11:29
+So and then it suggests to the Rocky Mountains. So yeah, that's a place where I would definitely go in the future, so.
+
+Kadir   11:36
+Maybe that's why you it could be aligning. OK, OK.
+
+P2   11:40
+Yeah.
+
+Kadir   11:40
+I totally understand. Yeah. So then also, yeah. Can you share an experience where it didn't meet your expectations? And then yeah, that would be nice.
+
+P2   11:50
+No. OK, OK. So let me go over the task with the shopping list, right? The..where you wanted to do like buy something.
+
+Kadir   11:59
+Yes.
+
+P2   12:05
+I really needed a new..
+
+Kadir   12:06
+You wanted to buy, right?
+
+P2   12:08
+Yeah, I I needed a new soccer cleats right now, so I just try to like incorporate that in the task as well. So I asked him to like, suggest me some soccer cleats based on my position of play like soccer field. So I play midfielders generally, so I wanted something light and something that lasted me long because last soccer cleat that I bought was like only for three or four months.
+It suggested me like 2..2 of the like most famous soccer cleats, which were like all over the Internet as so. Yeah. And I asked like, it is a well out of my budget. So can you like say say something in between like 150 to $200.00 but it still gave me the same same two models that it showed me like previously and after that what I did was I asked for like the pictures.
+Like the pictures, if if you provide like pictures from the Internet but no it it couldn't provide that
+So I think that was the worst experience with me. So it's sort of like a prompt insert a picture of [inaudible] within like big brackets. You can see in the screenshots so it was kind of like not that good.
+
+Kadir   13:14
+Yeah. What was lacking in in that?
+
+P2   13:17
+Yeah. So I I I asked the picture of like 2 soccer cleats that it was trying to show me earlier and it couldn't like provide me the picture and also the it couldn't like uh what do you say..suggest the price..uh..the cleats within my budget so. It it only knew about like 2 soccer cleats and it kind of like repeatedly went on and went on about the same thing again and again even if you asked like different questions.
+
+Kadir   13:46
+Umm, so it was not.. OK. Yeah, I I I got it. Definitely. So, uh, how much effort was required to use MyAI chatbot in your experiences so far?
+
+P2   14:05
+I guess it depends on like what kind of question you're asking. So again, so the first task that I did was like pretty smooth and I got what was required within like 3 or 4 questions or prompts.
+But for the..as I have said like..
+
+Kadir   14:17
+Mm-hmm.
+
+P2   14:21
+The soccer cleats one.. the shopping list and also the describe the picture or something like that. So it took like will more than like ten tries to get even get like close to it. So it was like stuck on one thing and it's going to go like up from that. So even if I ask a lot of questions, so yeah, I think it depends on my experience. It depends on what you're actually trying to ask out of the MyAI feature.
+
+Kadir   14:46
+OK. So then as far as I understand, do you mean, I mean it depends on the topic. It depends on.
+
+P2   14:53
+Yeah, yeah. It depends on the topic and how well known the topic is. I most probably because National parks are like more searched than football cleats..I guess..all over the Internet and yeah, I did ask it about like this dish from [a South Asian Country] during my photo.. Task with the photo uploading a picture and then asking about the picture.
+
+So it couldn't recognize that, and even if I like told it that it was like a dish from [a South Asian Country]. So it could not provide much information about that as well. So I think it depends on how what would people like asking the in the Internet more. So if you like talk about a least talked topic with the MyAI think it just like other time to like actually go into the topic you like you'll be stuck somewhere around like in the first two or three replies and then if you like try to get more out of it..it will take some time on those kind of topics.
+
+Kadir   15:28
+OK. Umm. I I get it. Yeah. When it start then it's it's not maybe forwarding with the conversation, unfortunately.
+
+P2   16:01
+Yeah.
+
+Kadir   16:02
+OK. So, uh, uh, do you think any skills are needed? Uh, any any skills are needed to use MyAI chatbot well or effectively let's say.
+
+P2   16:19
+I think even like no basic English writing and reading then it would be enough. You doing anything so that you just need to know about the Snapchat interface interface and just the basic English that you do writing, typing, reading. So I think that that that's enough.So I don't think that's like too much.
+
+Kadir   16:37
+Umm, so basically kind of English proficiency and then kind of writing, typing and you said writing typing.
+
+P2   16:43
+Yeah.
+
+Kadir   16:45
+I mean, do you think? By writing, is there any? Specific skills for.
+
+P2   16:55
+And not have I just writing because like the way the AI AI reacts to your message like it largely or it mostly depends on your prompt right.
+If you like, try to get trying to get some information out of the MyAI but you are not like expressing yourself well in the prompt. So then it will like take wrong turn on like it will not understand what you'd like to say. So if you have like good understanding of English writing and reading and then a good understanding of Snapchat because you have to first of all go to MyAI to like type type it out. So if you have a good knowledge of that interface, then I think anyone can do this.
+
+Kadir   17:28
+Umm.
+
+P2   17:32
+Anyone, anyone can utilize this yeah.
+
+Kadir   17:33
+OK. OK. So just here I have one more follow up. So then do you think in terms of writing or typing? Different writing and prompting would would would differ. Do you think I mean how is your experience with that?
+
+P2   17:59
+I think so. Yeah, I think like the way you write or like the way you present a prompt to an to MyAI. So it will definitely like the answer would be definitely different, so I don't know how to fix it, but yeah, if you like, try a write a prompt in it like a detailed manner.
+
+Kadir   18:09
+Umm.
+
+P2   18:15
+So you should like express all the things that you need to get out of my head. Sometimes it might work, but sometimes it can't, like necessarily pushes all the information. I think like that.
+So that's why I always like start with the small short short, short prompt and then try to go into deep into the conversation after it kind of like replies in a good way or replies in a good direction.
+
+Kadir   18:32
+Yeah.
+
+P2   18:37
+So if yeah.
+
+Kadir   18:39
+OK.
+Umm.
+And in your experiences during the diary study or prior, did you encounter any obstacles when using MyAI.
+
+P2   18:56
+Obstacles. And does advertisements count as obstacle? Because I received like a lot of that.
+
+Kadir   19:03
+Hmm so.
+
+P2   19:05
+Yeah, they were like a lot of extra, but it's advertisements which are not related to my prompts or anything like that. So this has been like annoying. Other than that, I don't think so. I like a little bit of trouble uploading a picture. I don't know why it like took a lot of long time. It took like about one minute to upload a picture, so I think those two are the major things that I did not like or would say obstacles while doing your the diary stories.
+
+Kadir   19:27
+Mm-hmm. So what makes advertisements? Kind of like annoying for you. Or think you are that they are, they might be obstacle.
+
+P2   19:44
+So if if the advertisement are like what I'm looking for. So if I'm like if they are like what, how do I put it? So if I see a random advertisement on my screen, so it must be like something related to what I'm trying to say, right to MyAI.
+
+Kadir   19:58
+Hearing me.
+
+P2   19:59
+But it is like some random kind of thing, like some magazine covers or something like that.
+So which I haven't really talked about it with MyAI then I think that it's like kind of annoying.
+
+Kadir   20:11
+OK, OK. Yeah, yeah, definitely. If if it's not related to your purpose, I understand.
+
+P2   20:16
+Yeah.
+
+Kadir   20:16
+Yep. Uh. So. Do you like? Do you feel like you have access to necessary resources to use MyAI properly?
+
+P2   20:29
+Yeah, I think so.
+
+Kadir   20:31
+OK. So that's that's fair enough. And have you heard somebody in your circle or environment else talk about MyAI before?
+
+P2   20:49
+When, it like first came out. Yes, but after that I don't think like anybody is using it would even though people using Snapchat. So when it first came out, like we were like, kind of, what do you say we were like, trying to see what that was? So it was introduced as your personal assistant on Snapchat first. So before MyAI, I think so it it was introduced as personal assistant.
+So I had like few talks with it and also some of my friends did as well. So yeah, but I don't think it's like that, that that used right now.
+
+Kadir   21:18
+And. OK so.
+
+P2   21:22
+I can't speak for all of all of us, but that's what I think.
+
+Kadir   21:27
+OK, so it can be a friend. It can be an acquaintance or a media, so probably you've heard from friends when it came up first. As far as I understand.
+
+P2   21:36
+Yeah. Yeah, it's gonna be your friend as well. So as I told you earlier, so when I was stuck once in the airport so I had nothing to do with having to talk with an AI. So yeah, it it did help me at that time. So it can be your friend.
+
+Kadir   21:48
+OK. OK.
+
+P2   21:49
+You're gonna situation, yeah.
+
+Kadir   21:51
+Yeah. So then yeah, it's more like if you if you, I mean you said for example you might be considering it as a friend or maybe personal assistant. So does this affect anything or how does it, you know affect you communication with with MyAI.
+
+P2   22:17
+So if you're like trying to like, uh, if you think of it as a friend, I think, and your prompt are what you type into the my hair would be like a lot of a lot friendly. So I think that's the only thing.
+So what? What you consider it as if you like. Think of it like a search engine. Or like, uh, yeah, feature that will help you to get some information. So you are prompt would would would be formal and you would like have to like type it in a detail. But if you like using it for fun so it can be like short and like silly kind of prompts because you that depends on the intent of use right?
+
+Kadir   22:51
+Umm.
+
+P2   22:53
+So I think there's there's the rest of the difference.
+
+Kadir   22:57
+OK. Yeah, so. Have you ever been encouraged by somebody you know or something posted on the Internet to use MyAI?
+
+P2   23:11
+No, not exactly MyAI, but like another a lot of other generative AI, so even my professor my advisor tells me to like properly use like ChatGPT or something like that. Other generative AI, but not exactly my Snapchat. Yeah, because I think the demographics are the people using my AI is like kind of like limited to teenagers right now. So they are not the guys who I would take advice with.
+
+Kadir   23:32
+Uh-huh.
+
+P2   23:35
+So I think that that.
+
+Kadir   23:37
+Well, OK, OK, I got it.
+
+P2   23:38
+We could.
+
+Kadir   23:41
+So would you recommend trying myAI to your friends?
+
+P2   23:49
+Yes, you're I can do that.
+
+Kadir   23:54
+And why?
+
+P2   23:55
+But but according to the user's there, according to the uses, if they want to like search for anything specific then I wouldn't like tell them to go to go and search in MyAI because I don't think like it's like that effective.
+
+Kadir   23:55
+Why would you?
+Why would you?
+
+P2   24:09
+But if they just want to have fun, I can like this. Suggest them this. Speak with MyAI in the future. It was one like I can say like that, but if they want like get some information out of MyAI, then I would not recommend it.
+
+Kadir   24:22
+OK, OK. And since starting using my I have you noticed any changes in your social media habits?
+
+P2   24:34
+No, no, I I have noticed with I think it is just the same.
+
+Kadir   24:35
+General social media habits, I mean. OK. Uh, do you think you have used or are currently using something similar to MyAI?
+
+P2   24:52
+My uh, yeah, I use like ChatGPT on a daily basis.
+
+Kadir   24:57
+Umm.
+
+P2   24:57
+All the other than that, I don't think I have like much explicit experience with other generative AI apps or some like that. I think that ChatGPT is the only one.
+
+Kadir   25:07
+OK. Yeah. I asked this but still I wanna ask. Maybe a kind of follow up. What is similar between chat GPT and MyAI or? And what is different in essence?
+
+P2   25:25
+OK. So in essence, OK, so the I think what I feel is like ChatGPT, if you like ask any questions.
+So it will like generally it will respond in like formal matters like and I use it like more more for like formal things. So if I have to write to mail and I want to like make like make it like good I ask such as visual change the mail and change the mail to a better format. And if I'm writing a document and I think that my English is a little bit bad, then I asked the charge to change it into kind of like formal or like more scientific terms or write in a better way or for clarity or something like that. So I think it's like more more used in like office kind of work with ChatGPT.
+Uh, for me personally, so actually use this during my thesis.. so during my thesis.
+
+I use this use this a lot but MyAI I think it's just like as I said earlier. So I we can use it as a friend.
+So if I you don't need to be like that formal it doesn't. It doesn't become that formal with you in the responses, so it's like kind of like friendly chat I felt. So yeah, I think the main difference between that is like my uses, it depends on my users as well.
+
+Kadir   26:33
+Hmm.
+
+P2   26:39
+So I use my.
+
+Kadir   26:40
+Umm.
+
+P2   26:41
+I use ChatGPT for like a lot of things in my work, but yeah, MyAI not that much.
+
+Kadir   26:45
+Hmm.
+Umm uh, yeah, I think this is this is pretty helpful. So I remember you also were telling about you use ChatGPT on your desktop and then MyAI on your phone so.
+
+P2   27:01
+Umm.
+
+Kadir   27:05
+Other than kind of like categorizing you said ChatGPT, for more formal stuff for more. Maybe professional stuff versus check MyAI, more personal, maybe more lightweight.
+
+P2   27:16
+Yes. Yeah.
+
+Kadir   27:17
+So what characteristics? What characteristics of MyAI leads to that kind of like perception or perspective for you?
+
+P2   27:32
+Uh, so yeah, if you like, look at some of the things, some of the screenshots. So the way that MyAI reply is, so it's like pretty like informal, if you see uses like worse like oops, my bad something like that.
+
+Kadir   27:42
+Uh.
+
+P2   27:46
+So the things that you use and in like daily conversation with the friends and all so and it it is like kind of like what do you say expressive of its emotion? I think so because like it it kind of like if I tell it that it is wrong, then it says like, oops, I'm..I'm so sorry for that. Something like that.
+
+Kadir   28:03
+Umm.
+
+P2   28:04
+We don't see in terms if you did that often, so eventually like give a prompt, then it will just say something formally. So I think this is the main reason why is why I said so.
+
+Kadir   28:14
+More conversational features of language. Uh.
+
+P2   28:18
+Yeah, yeah, yeah.
+
+Kadir   28:19
+Supposed in my AI any have you? I don't know. Like would you like to eligible bit comment on any. Like interface features like any features that MyAI has, make it more personal or versus impersonal.
+
+P2   28:39
+Interface features. Uh, I think it's just like chatting with a friend right in MyAI. So if you if you have seen the interface of my AI so it's like exactly the same as like other Snapchat chats.
+
+Kadir   28:47
+OK.
+
+P2   28:56
+And so it has like a place to, like, upload your pictures or something like that. Send a sticker, sticker or even like voice memos, which you don't see in ChatGPT.
+
+Kadir   29:03
+Umm.
+
+P2   29:04
+So yeah, I think that all the interface is is it is like making it is like designed to be like your personal friend or assistant like that's what I feel.
+
+Kadir   29:15
+OK. OK, definitely indefinitely. That makes sense. So I think you said this, you saw some ads or sponsored content while interacting with MyAI.
+
+P2   29:30
+Mm-hmm.
+
+Kadir   29:30
+And then you're feeling was OK. I'm skipping this question because you already kind of responded to that, sorry. So in terms of in your conversation with my I, how reliable do you find the responses by MyAI?
+
+P2   29:51
+Reliable.
+
+Kadir   29:52
+Yeah. Do you think the responses from my AI have reliable they are.
+
+P2   29:57
+So far I don't think I can see that I can answer this question right now because I haven't like cross checked, but it uh answered me because I actually to like give me an itinerary with all the pricing and the budgeting. But I haven't like looked into how accurate that was really. But I know from the fact that it gave me like wrong information on the soccer fields, so I would say not that reliable.
+
+Kadir   30:21
+Hmm. Yeah. With soccer cleats I? When I looked at your screenshots, umm for all the options it was offering giving the same price right?
+
+P2   30:33
+Yeah, I I told it like it. My budget is like $150.00 and give me a price range for all of the soccer cleats, but I think it it all showed the same pricing like $150.00 for everything yeah.
+
+Kadir   30:47
+And then it's kind of like a question mark, I I see, like I, yeah, so you might have shared something personal when interacting with MyAI, for example, I've seen a you you share your picture with the chat, but what are your concerns regarding how the information you share is used by MyAI on Snapchat or by Snapchat let's say?
+
+P2   30:49
+Yeah, yeah, yeah. Yeah. OK, I I couldn't get the last part like that. Good. Can you like repeat that again?
+
+Kadir   31:20
+Sure you shared. Let me quickly be we're waiting. You might have shared something personal when interacting with the my AI chat bot and what are your concerns regarding how the information you share is used by Snapchat.
+
+P2   31:38
+Used by Snapchat.
+
+Kadir   31:40
+Yeah.
+
+P2   31:42
+I don't think I have, like, ever thought of thought it. So what I think what do you want me to say in that regard? If my information or like pictures are used by the Snapchat itself, the Snapchat app or like my AI in a different way, is like going to be what you say public on the Internet or something like that. I couldn't get the question completely so.
+
+Kadir   32:08
+Umm.
+
+P2   32:41
+OK, it's alright. Yeah, I'm not that concerned because all everything like you say right now or in the modern day world like they know it all, I think so they can like hear us like through our phones. And so if you look at the ads given by Facebook is like kind of even if I speak in [home country language] with my friend, it kind of latches onto that and shows me the air of the same thing in Facebook.
+
+Kadir   33:09
+OK.
+
+P2   33:11
+So I think our data is being like sold everywhere right now. So I I don't mind. I don't mind it.
+I..I'm not that concerned about it.
+
+Kadir   33:26
+OK, I think I this is totally fair. I think this kind of brings us to the end of our conversation. Do you have anything at the very end to add or to emphasize before we hung up?
+
+P2   33:44
+No, not really. 
+
+P2   35:08
+Nice to meet you, buddy.
+
+Kadir   35:11
+Yeah.
+
+Shristi   35:11
+OK, I'll stop the recording.
+
+Kadir   35:11
+Nice to meet you too.
+
+Shristi stopped transcription

@@ -1,0 +1,355 @@
+﻿Transcript P4_Interview
+March 25, 2024
+
+Shristi 0:06
+OK, it's the recording has started.
+So I'll just first start with a few warm-up questions.
+Let's just get comfortable around each other.
+So for that, can you tell me a little bit about yourself first?
+
+
+P4 0:22
+Yeah! My name is Jacob. I'm a sophomore at Iowa State. I'm studying math education.
+I like music. I'm in the marching band here, and I like to play basketball for fun.
+
+
+Shristi 0:35
+Ohh it's great. Thank you so much.
+So Jacob, what social media platforms do you use?
+
+
+P4 0:47
+I would say pretty regularly I use Snapchat and Instagram and then on occasion I use TikTok.
+
+
+Shristi 0:54
+OK. Do you remember when you started using Snapchat?
+
+
+P4 1:02
+Probably sometime in middle school, so that would probably be about six or seven years ago.
+
+
+Shristi 1:09
+OK, so since you are even a frequent user right now, so can you tell me what do you do most on Snapchat?
+
+P4 1:17
+I send pictures to friends or like it's pretty easy to message a friend and I I do really like the feature of making group chats on Snapchat and that's pretty convenient for like a group project and stuff like that.
+
+
+Shristi 1:29
+OK, so do you also collaborate with your, I don`t know, colleagues like friends from task to do projects as well?
+
+P4 1:38
+Yes.
+
+Shristi 1:40
+OK. I had never heard of that before. Just making sure I got it right. So have you ever used the Snapchat   MyAI feature before taking part in this study?
+
+P4 1:57
+Yes, I have. It was mainly just the kind of like test to see what it could do, like I didn't do like anything like as intricate as the study required, But I have like messed with it a little bit before.
+
+
+Shristi 2:07
+Umm, OK. So do you remember when you first played with it or tried it using it?
+
+P4 2:14
+Yeah, I kind of did similar stuff like like I would do to ChatGPT which is like I was seeing how you could like test it with prompts like for example one time I asked a question and I said like only responding emojis is to see how he would try to do that. It's like just stuff like play with it. Nothing like super in depth.
+
+Shristi 2:34
+So moving on, so can you tell me or show me an example of how you used Snapchat MyAI? you can talk about something that you did as a part of this study or something outside of it.
+
+
+P4 2:50
+Something I did for this study was to get travel recommendations for like a three-day trip and I like one of the things I could do to, like, narrow down the prompt. Once I initially asked was like give my location and like give a pricing. If I thought like a hotel was too expensive, I kind of asked like are there any cheaper options and it referred me to the cheaper options. And what I liked about it was it showed you like like a, you know, like the like, the global Snapchat stories people can upload it and showed you that of that hotel. So you could see like actually what the inside of the hotel looked like and what was going on at the time.
+
+
+Shristi 3:20
+Uh-huh. So you could see what other people snapped about the place?
+
+
+P4 3:32
+Yes, like if it gave you location, there was like a little circle, you could click on.I think it took a screenshot of it and sent it and it would open like the like the public stories people would post. So you could see like them like showing Snapchat stories like at that hotel or in the area. So if there's like a festival or event going on, you could like see what's actually happening.
+
+Shristi 3:53
+Oh, that's cool. I didn't know about that, actually. That's great.
+
+Shristi 3:56
+So the travel recommendation thing that you did, would it be similar to things that you would generally do on MyAI?
+
+P4 4:12
+Ohh like are you saying? Like what? I actually like to use it for travel travel recommendations like in my own time.
+
+Shristi 4:17
+So is it do you think that certain example depicts what you usually do on MyAI?
+
+P4 4:26
+I would say prior to the study, no, just because I didn't really know how useful it would be, but like looking back now, I would like going on in the future. But I would say previously I would not have thought about doing that.
+
+
+Shristi 4:35
+OK, so based on any interaction that you did as a part of the study or maybe something outside of it, have you ever found MyAI to be useful?
+
+P4 4:51
+Prior to the study, I would say no, I didn't use it in depth like say just  Googling something or ChatGPT, so I didn't really know the capabilities before the study.
+
+Shristi 5:05
+Makes sense! So after the study, do you think there might be use cases for you for MyAI in the coming future?
+
+
+P4 5:15
+Yeah, like I really did like the convenience of it. And I do like cooking and I think I mentioned that it would be pretty easy to ask like, how do I substitute this for recipe or like pretty easy to live ask it a specific question without having to Google and filter through results.
+
+Shristi 5:33
+Can you share an experience where you felt MyAI meet your expectations?
+
+P4 5:52
+I would say just like with the trivia game, it did. It was pretty straightforward. It was just like I asked it to, like, give me a I think it was Star Wars trivia and it like gave an answer or get, gave a question with four different answers in multiple choice. It was pretty straightforward.
+
+Shristi 6:08
+So when you say straightforward, what do you like about the interaction that happened during the game?
+
+
+P4 6:20
+Umm, when you gave an answer, if it was wrong, it would like explain why it gave context instead of like just like instantly giving you like what was right what was wrong. I liked how it kind of explained, and at once there was one point that was kind of confusing, and I asked it to explain, and it did explain like quite a bit more than just like otherwise I'd have to like Google it and like figure it on my own. But I did like how it it explained it pretty well.
+
+
+Shristi 6:45
+Can you share an experience where MyAI did not meet your expectations?
+
+P4 6:56
+I would say umm. I asked it for like the three-day trip that was a prompt. I asked it for travel directions and like I I gave where I was like I said, Ames, IA and it couldn't give like directions. it said it for some reason it didn't have my location, which I was kind of confused because I thought like, you know, Snapchat gonna has your location. So you would have to use an external app and like it recommended apps to use, but it couldn't itself give you directions.
+
+
+Shristi 7:29
+Yeah, I saw that interaction in one of your screen captures. So when you said you thought Snapchat usually has your location, so because there is a setting where you can turn it on or off. So for yours, have you turned on the location setting for Snapchat?
+
+P4 7:49
+Yes, because like that I know. Like there's like that Snapmap feature in mine is on.
+
+Shristi  7:54
+OK. Thank you for clearing that up. So when you were using MyAI for the four days during the study, or even beyond that in general, how much effort do you think was required to use MyAI?
+
+P4 8:13
+Uh, not much. Because like most of the stuff was like pretty general, I think sometimes you kind of had to narrow it down to like if you wanted like a more specific response. But that's like really on you if you want, like like a specific category like like I was saying with like a hotel, like a cheaper hotel. You kinda have to specify that, but I would say overall you don't have to like put that much effort into it.
+
+
+Shristi 8:34
+So when you say it was not much effort, why do you think it was not a lot of effort, even if you had to narrow down what you were asking a lot of times or maybe switch up what questions you were asking, why do you think it was not a lot of effort?
+
+
+P4 8:55
+Because like where it differs versus like Google is like holds on like what you were just talking about. And I think like the context of what you're previous prompt was, it holds that over. So I don't have to like restate something. Like it'll kind of like think like of like about base and what you already said like how to narrow down more. So I think with the how I use this context as why it's easier than like a Googling something.
+
+
+Shristi 9:20
+Yeah, that that makes it helpful for me to understand. So do you think that anybody you needed any special skills for using MyAI well?
+
+
+P4 9:37
+There might be some skill into like getting a very specific prompt, but overall is pretty intuitive and like I think you could even like ask it for help on how to use it effectively and probably answer that well, but overall I did not. I'm not super like tech knowledgeable and I didn't have any difficulty with it.
+
+Shristi 9:56
+So when you are using MyAI, did you face any obstacles that you encountered?
+
+
+P4 10:13
+It's not a big obstacle, but there is the whole location thing and it couldn't give me directions. And I think one time during the trivia game, it did actually like mess up which answer was correct? But that was it. And I wanna say, those weren't really obstacles because like it didn't really like ruin the experience at all. So overall, I wouldn't say there weren't really, really many obstacles at all.
+
+
+Shristi 10:36
+Umm, so when you found that MyAI got confused with the trivia question, do you remember how you attempted to resolve the problem?
+
+
+P4 11:02
+Yeah, I believe I responded and said I was pretty sure it should be like this other answer, and then like, I think my response with ohh like yeah like upon like looking into it more like yeah that's correct. Like I apologize for my mistake and it kind of like corrected itself.
+
+Shristi 11:17
+So I do remember there was that this interaction was quite interesting for me when when you remember when I think it was the third day activity where you had to like stand stickers and pictures and you had sent the dragon one and and you kept telling the AI this is this character from Mario. Don't you, like, recognize this?
+
+
+P4 11:38
+Yeah, yeah.
+
+Shristi 11:39
+And then you send a picture like the sticker again and it it does not recognize at all.
+
+P4 11:44
+Yes, yeah.
+
+Shristi 11:46
+Did you feel any, you know, discomfort or problem when the interactions were going in that direction at the time?
+
+P4 11:56
+OK, I'm glad you got that. You brought that up because I totally forgot about that. But yeah, like I was impressed with how like it recognizes like a photo very well. Like if you send like a selfie like it'll be like, oh, like I see it's night or like it can tell, like, very well, it's going on in the background. But the stickers, like it was just a picture. Yeah, Bowser from Mario and like at first, it didn't recognize it. And I said Ohh, it's Bowser and it's like, uh, like, yeah, I know what that is. And like like you were saying, I kept resending it just like did not recognize that no matter how many times I sent it. So I don't know. I wouldn't say it was discomfort, but I just kind of like I was surprised that it's able to pick up like a photo background so well, but it can't pick up the sticker very well at all.
+
+
+Shristi 12:33
+Yeah, I think maybe because it's asserting character. Maybe. Yeah, that's something interesting to look into, for sure. So when you were using MyAI, did you feel like you had access to necessary resources or support to use MyAI properly?
+
+
+P4 12:57
+Yeah, I think so. I think it's pretty like, well contained. We're like it can answer your own questions very well. I did like how like on certain prompts it would give you like good follow-up questions. You could just click on and it would ask it for you and answer right away and like on the occasional time like with the directions it would refer you to like a better application that you could use. So I would say overall it's pretty useful and like even if it doesn't have like the right resource, it can like refer you pretty well.
+
+Shristi 13:19
+OK, so when so I think for the study we did tell you about it and we asked you to use it, but apart from us, have you have you heard somebody else talk about MyAI, it could be a friend, acquaintance or a media outlet?
+
+
+P4 13:51
+Just when you was very new, like when it was first coming out, people were talking about it and like using an A lot and like seeing what they could do with it. But that's really the only time I've heard of like people I know using it.
+
+Shristi 14:04
+So had there been anybody who encouraged you to, you know, like use the tool?
+It might be someone who said something to you personally, or maybe you saw people talking about it on the Internet, telling people who use MyAI.
+
+P4 14:25
+I hadn't heard my friends like about this, but I I think I saw somewhere online that like after like the photo feature was like kind of unable to was cool like to see like how it responded like certain pictures like I saw that and I was interested so like I would send it like random pictures of like maybe like a forest near me in different stuff like I would see what it would say to that and it's pretty interesting to see how like how well it was at like describing the photo you would send.
+
+
+Shristi 14:51
+So when you first tried MyAI, when it first came out, did you try it? You know, because I think Snapchat sent push notifications and like a message to everybody about, hey, this is a new feature we have. So did you try it because of that? Or maybe because you saw other people doing it.
+
+
+P4 15:15
+I never remember getting a push notification, but I do remember like other people using it to like that made me wanna try it out. So I'd say, yeah, from other people.
+
+
+Shristi 15:24
+So after using it, you know for a few days based on what you've interacted with, would you recommend other people to try using MyAI?
+
+
+P4 15:41
+Yeah, I think I would. I think this study definitely made me realize, like how actually like, useful and versatile it can be. And I think for like like the different prompts you gave or are good examples. And like, it's funny, like even like the other day, I kind of asked, like, where's like a good restaurant to eat like, that was independent from the study and actually give me a a good, a good response and actually went to that restaurant. I recommend. It was really good.
+
+
+Shristi 16:04
+So in addition to looking for restaurants, have you, you know, found yourself using MyAI apart from our study?
+
+P4 16:17
+Uh, not yet, but I'm sure in the future I will.
+
+Shristi 16:20
+OK so after using MyAI, have you noticed any changes in your social media habits?
+
+
+P4 16:33
+I'm not sure 'cause I like I said it hasn't been that long since the study. So I would say like, not too. I haven't noticed a big difference, I would say.
+
+Shristi 16:44
+OK, makes sense. So do you think you have used in the past or are currently using something that is similar to MyAI?
+
+
+P4 16:58
+Yes, I have used ChatGPT before.
+
+Shristi 17:01
+OK, so when you are using a chat GPT versus when you are using MyAI, do you feel there are any similarities between the two tools?
+
+P4 17:16
+I think definitely like in responses. I do notice like the structure of responses are pretty similar and you can kind of like tell ohh this is likely AI generated and like I think like you know it's very similar to like how you like input a prompt in that response. So I'd say they're pretty similar in that aspect.
+
+
+Shristi 17:36
+And going further from the similarity is, do you recognize any story differences between the two applications?
+
+
+P4 17:49
+I think definitely like the Snapchat one was distinct in like the Snapmap feature. And like how it how it utilizes like Snapchat's own features. Or you can like send in a photo and stuff like that whereas it's like ChatGPT is pretty separate and it's like just like the text aspect of it. So let's say that's a big difference.
+
+
+Shristi 18:09
+While you were interacting with MyAI, did you see any ads or sponsored content?
+
+P4 18:22
+Yes, I did. It was strange because the first day I did not, but then the second day was like. It seemed like every prompt had one. It's just like, you know, like link you to Amazon and sometimes it was useful because, like, I think I like, like asked it about. I don't remember what the the prompt was like. Oh, like, where can I buy this near me? And it links me to an Amazon. And that was kind of useful, but otherwise it just seemed like every prompt had an ad that it didn't need.
+
+Shristi 18:48
+So the sponsored ads that you were getting were not relevant to what you were asking at all?
+
+P4 19:01
+I don't remember because like at a point I just kind of like ignored them because I just scrolled past. But like I remember thinking like, ohh, why is this? Why is there an ad for this like I was just asking a simple question, so I think there were times.
+
+
+Shristi 19:14
+So umm, so you know when you saw so many ads popping up, how did it make you feel at the time?
+
+P4 19:28
+Why I think at first I was surprised because I never knew that they had like sponsored ads in there. And then when it started, like becoming when it started to get to the point where, like every response and it was just, it just seemed like that one day it happened. I was like kind of frustrated, like, I'm like, why is there? Why is there an ad on every response here?
+
+Shristi 19:47
+So during the interaction that we saw, we did find a few examples where you thought that the the response that you got were not accurate from MyAI. So having that pretext, how reliable do you find the responses by MyAI?
+
+P4 20:15
+I would say like Gene, generally like AI's or my eyes, like pretty good for like general stuff. I don't know if I would use it for something like statistics or like like more more recent information like I'd rather like Google that. But if it's like if it's like a like, it gave me a recipe for something like, I would trust that cause. It's just like a it's a recipe like I wouldn't ask anything like controversial, but if it's like a known thing that we've known for a long time, I would trust it there.
+
+Shristi 20:43
+So when you say you would trust MyAI for non serious/personal stuff, So what kind of use cases do you think MyAI would help you in your daily life?
+
+P4 21:02
+Like maybe stores near me. Like what those stores sell? Restaurants near me that are good, certain recipes that like stuff with food I think it would be good like earlier I was time of like if you maybe like if you're making a recipe and like you might not have a certain ingredient, I think MyAI  would be good to say ohh like what's a good substitute for this or like ohh I messed up this part of my recipe. Like how can I fix my cooking from here because that's like a more specific thing that like maybe Googling can't help with.
+
+Shristi 21:33
+Do you also feel comfortable using MyAI for something that's relevant to your academic tasks? Maybe learning something new or or even using it for something relevant in your assignments or maybe classes? Do you feel comfortable doing that?
+
+P4 21:53
+I don't think it would be just cause like I don't know. I'd rather like either ask a professor or like, you know, find a different like more reliable source. I'm not sure because I don't know I wouldn't wanna like put that as like a source or, you know, I'd rather like do it independently, I feel like.
+
+Shristi 22:10
+So when you were interacting it with stickers and pictures and even with your prompts, you might have shared something personal while interactive with MyAI. So what are your concerns regarding how the information you share is used by the company?
+
+
+P4 22:35
+I would say I'm actually like not super concerned because like I've never sent something over Snapchat that like I've been worried about getting out because I know like there's like a whole thing with like digital footprint. Like I I don't know like how they like translate the photo or like what they do with it, but like I just like make sure that I'm safe with it.
+So like if if what I put in is safe then like I know I'm not worried about it getting out.
+
+Shristi 23:01
+I think when we talked, I think we did not really talk much about the shopping task that we had, so do you remember how that shopping task went? If you remember, can you kind of walk us through what you did with it?
+
+P4 23:23
+Yeah, I think I just kind of like a niche like asked the broad question like hey, like what kind of stores are nearby me and like it told me at Walmart and Target and some other stories. And then from there I narrowed it down and said ohh like what does target sell? Like what does Walmart sell? Like can I buy this certain product at this store? Just like I started with like a broad term and then narrow it down, I would say the only issue with that was this was kind of like an off-side thing, but there's like a convenience store at Iowa State. And I asked it about that when they get it kind of got confused with like, a farmer's market at some point. But that was that was the only thing.
+
+
+Shristi 23:57
+I do remember seeing that screenshot I think is that this little convenience store that's inside the. So is it the convenience store that's inside one of the apartments in in?
+
+P4 24:21
+No, I know you're talking about, but Union Drive Community Center.
+
+Shristi 24:27
+So yeah, when you were talking with it about the convenience store, I think I think it give you like several recommendations of things you can find. I think by that time you realize that it was not talking about the convenience store and something else. And then you said, hey, it's not. I'm talking about this. So what products do you think can be found here? And I think the response MyAI gave was like pretty generic of what things you could find in any convenience store. It was like, hey, yeah, you can find sodas and snacks and stuff like that. So in in that interaction, how did you feel about the usefulness of the information in terms of the specific question that you had asked?
+
+P4 25:23
+I would say I kind of realized that it wasn't super usefull for something that's specific like this certain small store. It's like not a good option for and I felt like I'd rather Google it or ask around at that point, whereas like something more broad like a big place like Walmart that you have like a lot of that's a good thing to ask MyAI for, but like a smaller store that might only have like one or a couple locations might not be as a that's good to ask about using MyAI.
+
+Shristi 25:54
+So building a little bit upon the similarities and differences we talked about with ChatGPT, I think you've noticed that the way you talk with MyAI is a little bit different from what you would talk or or you know, like converse or communicate with ChatGPT. Because of the nature of what MyAI is represented as, does your interaction differ from what you would do with ChatGPT? Is there something different? How you pose the questions.
+
+
+P4 26:38
+I would think first I'll just like I would never like I was saying like use MyAI for academics. Since like I'm a MATH major, I might use ChatGPT if I'm confused on a concept I might use ChatGPT, like explain a some kind of concept to me in like a certain way that that way I could understand it better, whereas MyAI might be better for like we're saying like the cooking or travel recommendations. But I would like a prompt I would trust like ChadGPT more with like academic stuff, but I wouldn't rely on it fully of course.
+
+
+Shristi 27:15
+Summing up, so summing up the entire interview. You've already talked about things that MyAI is good for, and I think you've already touched into it. But what cases do you think MyAI is not useful for at all?
+
+
+P4 27:43
+Kind of like when I said it earlier, like anything super recent, anything that like people have a different opinion on like, controversial. I wanna use it for anything that's like like a statistic or fact. Or like ohh like can you like get a quote from this book for me? I'd rather like do that myself or like something academic. I don't think I would use MyAI for any of those things.
+
+Shristi 28:06
+So yeah, that's all the questions that we had. Thank you so much for answering it. Yeah, we did it pretty fast. I was not expecting to be done with this early, but yeah, we had a good conversation. So before we end the recording, is there something that you would like to mention that we did not get around talking about?
+
+P4 28:30
+Uh, I guess it was interesting to see, like, I didn't realize, like the capability of MyAI before the study. So it kind of opened me up to like actually seeing like how you can utilize MyAI versus just kind of like messing around with it like I've realized it's actually pretty useful and have some good features.
+
+
+Kadir 28:56
+Umm, so Jacob, I have a quick follow-up with one of your answers. You were saying that you would probably be feeling more reliable or you would think MyAI is not as reliable as ChatGPT for maybe serious tasks. I understand probably you are thinking about the responses you're getting from both systems and then maybe you are evaluating that reliability based on the responses. But other than the response quality, is there any other reasons why you think MyAI might seem less reliable than ChatGPT?
+
+
+P4 29:46 
+I don't even you know that's an interesting point. I can't really give any specifics on that because I've actually, I've never really tested it and like putting like a like a prompt like explain this concept to me before like that might be something to play around with because I wondered like I might just be thinking that cause like you know, I don't think of like Snapchat like the most professional thing. So it could just be like that kind of like setting like ohh, it's like snapchatting a like a friend, quote unquote when you're talking MyAI versus ChatGPR is more separated from that. So it could just be that. I think I might have to look into that more, but I wouldn't say that there's nothing really specific for my reasoning to be honest.
+
+Kadir 30:26
+OK. Thanks very much.
+

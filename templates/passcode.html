@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to PensieveAI</title>
+    <meta charset="UTF-8">
+    <!-- Link to Google Fonts for Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file passcode_styles.css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/passcode_styles.css') }}">
+</head>
+<body>
+    <!-- Page Title and Description outside the container -->
+    <h1 class="title">Pensieve<span class="highlight">AI</span></h1>
+    <p class="description">
+        By leveraging the magic of GenAI, PensieveAI helps qualitative researchers dive deep into their "memories" (data) and uncover hidden patterns, all with the precision and ease of a well-cast spell. Just like a Pensieve reveals the past, this platform illuminates the most important themes in your research.
+    </p>
+
+    <!-- Instructions and form inside the container-->
+    <div class="container">
+        <p class="instructions">⚡️ Enter the Password ⚡️</p>
+        <!-- Display error message if the 'error' variable is passed -->
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+        <!-- Passcode entry form -->
+        <form method="POST">
+            <!-- Password input field -->
+            <input type="password" name="passcode" placeholder="Enter Password" required>
+            <!-- Submit button -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="footer">
+        © 2024 PensieveAI. All rights reserved.
+    </div>
+</body>
+</html>

@@ -1,0 +1,888 @@
+﻿Transcript P1_Interview
+March 11, 2024, 7:05PM
+
+Shristi  0:07
+Ok.
+OK, so we have started the recording and transcription.
+I just move ahead and start with a few warm-up questions.
+So can you tell us a little bit about yourself?
+
+P1  0:21
+Sure. Umm.
+So my name is [--].
+I'm currently a second-year master's student in the HCI program.
+This is my second to last semester.
+Umm before that I'm.
+I'm from [a US state], but originally I was born in [an East Asian Country] and I went to [a US university] for mechanical engineering and I did that for I did Engineering for like 2 years.
+Decided that it wasn't for me, so I wanted to pivot to something a little more creative and so here I am in the HCI program and my goal eventually is to be a UX designer.
+
+Shristi   1:02
+Umm, thank you.
+So which social media platforms are using currently?
+
+P1  1:10
+Umm, right now I think my my biggest ones are probably like Reddit and Tiktok.
+
+Shristi 1:22
+And Tiktok.
+OK umm so.
+Umm.
+So when did you for Snapchat, since we've already settled that you've been using Snapchat for some time and you use it at least once a week, so when did you so?
+
+P1  1:31
+Umm.
+
+Shristi  1:38
+Do you remember when you started using Snapchat?
+
+P1   1:41
+Yeah, I started using Snapchat when I was in high school, so it has been about seven years since I first started using it.
+And I was definitely a lot more active on it early on.
+I'd say, like I was active in high school and for most of College, but then after college, I think guys started caring less about it just because, like, a lot of my friends also started caring less about it and they stopped posting as much.
+And my primary usage of Snapchat is just to check up on my friend's stories.
+
+Shristi   2:15
+Umm.
+
+P1  2:20
+So because like umm, we're not like actively on it as much.
+And my friends aren't.
+I don't go it on it too much anymore.
+I literally check it like once a week just to see if there's anything going on, but usually there's nothing.
+
+Shristi   2:36
+Umm.
+OK.
+So yeah, so when you say you're checking what's going on, are you just checking the stories or are you also checking individual texts from your friends, family, et cetera?
+
+P1   2:51
+Yeah.
+So I'm like permanently on do not disturb mode, so I like don't really get any notifications from any social media. So I have to go in there and check if like anyone sent me a message and usually it would be like my friend sent me a snap like directly to me and if not then I'll check like other people's stories.
+
+Shristi   3:16
+OK, so do you also actively, you know, snap something and send it to your friends or family?
+
+P1   3:23
+I do.
+It's usually like as a response to other people, or maybe like friends that I haven't seen in a while.
+
+Shristi   3:30
+Yeah, and.
+
+P1   3:34
+And like I'm not, I don't really like text them or like. Umm. Interact with them much on other social media, but like we used to. So uh, snap back and forth a lot.
+So I would be more inclined to use Snapchat to like talk with those friends.
+Like if I think of them every once in a while.
+
+Shristi   3:54
+Hmm.
+OK, makes sense.
+So how do you ever used or tried using the MyAI feature before this study?
+
+P1   4:03
+Umm, I actually have not used it.
+I..I remember seeing it like when I updated my app at one point and my first thought was like I really had no interest in trying it.
+Umm.
+
+Shristi   4:20
+Yeah. OK.
+
+P1   4:21
+It just seemed like it's like another..like digital products that has like co-opted AI for, like, no reason in particular. And I've seen, like a couple funny interactions on social media about it.
+Like back when it was first released and it wasn't like that good yet and like there were some some funny things I saw on social media. So just from like that experience, I..I never really tried it out.
+
+Shristi   4:53
+Yeah, yeah, of course.
+Ohm.
+So I will move to questions about the usefulness that you saw while interacting with it for the past few days now.
+
+P1   5:06
+Umm.
+
+Shristi   5:06
+Umm, can you walk me through an example out of like any of the interactions that you did, within and outside of our study where you could show me an example of how you used MyAI?
+So you can show like maybe an example of where you started and how it went.
+
+P1   5:23
+Sure.
+
+Shristi   5:27
+If you remember it.
+
+P1   5:29
+Yeah.
+So did you say like it's OK to use an example that I already mentioned in the study?
+
+Shristi   5:35
+Yeah, of course.
+
+P1   5:37
+OK, sure.
+So the one I remember the most was my first time using it.
+Umm.
+And it was to schedule a, excuse me, to plan an itinerary for a city like a three-night trip in any any city in the US.
+
+Shristi   5:56
+Umm.
+
+P1   6:00
+And so for that one.
+I wanted to do Indianapolis because that's where I'm from, and so I thought it would help me.
+
+Shristi   6:07
+Umm.
+
+P1   6:08
+Like decide better if like the..like the recommendations are good.
+
+Shristi   6:16
+Mm-hmm.
+
+P1   6:16
+So umm, so I remember just like logging in and like I guess I thought of the AI more as like a person because it like has a Avatar.
+So like I think the first thing I said was like, hi, how are you?
+
+Shristi   6:28
+Umm.
+
+P1   6:32
+Like how I would talk to a person, but like I wouldn't be saying that to like chat gibt or like any other like faceless AI model.
+
+Shristi   6:41
+No.
+
+P1   6:42
+So it was interesting that I like felt like doing that.
+And then I..I went into asking like, what I would recommend for a three-night itinerary in Indianapolis.
+And I've noticed that my like conversation.
+No, like style was a lot more like casual, like I wasn't too like..careful about like ohh I need to make this prompt like perfect so this machine can understand what I'm saying. Like I was sort of just speaking like how I would to old friend. Umm. And it gave me back.
+
+Well, at first I think I like thought it was a three-day itinerary instead of a three night. So I asked for a three day and it it gave me back and itinerary that I thought it was like actually decent like I would. I would be happy like doing these things for three days. And I remember like sending the itinerary to my friends. I have a group chat with my friends from Indianapolis and I was like hey, the Snapchat AI recommended me this. So like, since you guys are also from Indianapolis, like, what do you think just so I have like more opinions than just my own and they also thought it was pretty good. But then one of them was like, you know, I think copilot would give you a better answer because like, they would actually source their like facts.
+
+P1   8:15
+Umm.
+So yeah, even though the suggestions were good and like Snapchat, AI did give me like a couple links to like, some of the places it was recommending. I think it was not like super detailed about how it reached those conclusions.
+
+Shristi   8:34
+Umm.
+
+P1   8:35
+And it didn't really give me any like sources of like why it thought that this would be a good idea to recommend to me. Even though the final recommendations were good and I also I..I've realized I made a mistake by saying a three-day itinerary instead of a three-night.
+So I asked it again. Like, hey, could you? Add an extra day in to the itinerary.
+I actually wanted three night and it did add an.. an extra one day.. like it understood what I was saying, which I was like impressed by.
+
+Umm. And I also asked for like like this is just for my own fun. Like I was asking, like how much should I budget for this trip? And so it gave me an initial budget for three nights, and then an updated budget for three days. And I thought I wasn't impressed at like it could do that also, even though, like, I think looking closely at it, I think some of the estimations were like a little off like it estimated that I would spend like 20 bucks for Uber for the entire like, 4 days.
+
+Shristi   9:30
+Umm.
+
+P1   9:45
+And I'm like, I don't know about that.
+
+Shristi   9:48
+Yeah.
+
+P1   9:48
+And also like no source is either about like how it reached these estimations. So yeah, from from that experience I think I was like pleasantly surprised at like how good it did or like that gave me like like, actually, like good recommendations. But I was like, disappointed that it didn't give me sources.
+Umm oh and I also remember. I think later in that conversation I was I wanted to try to ask it something else. So I said. So what are some like Asian restaurants you would recommend to me in Indianapolis? Because I love like Asian food and it recommended me a bunch of places in Austin, TX, which is like the city I currently live in.
+
+Shristi   10:46
+Mm-hmm.
+
+P1   10:46
+And so I think at some point in the conversation..it like lost the train of thought and like it didn't think I was talking about the same things anymore.
+
+Shristi   10:55
+Yeah.
+
+P1   10:58
+Like the same like trip when I actually was, but I like.
+
+Shristi   10:59
+Umm, you know?
+
+P1   11:02
+I thought I was clear personally that we were still talking about the same trip.
+Umm, but yeah umm after like I corrected it..it was fine.
+
+Shristi   11:14
+Ohh OK so yeah, so sometimes it does it. So you were talking about what, like a few things in a chain? I think sometimes ChatGPT does that too. We're talking about a certain topic and then it forgets about it and gives you something else.
+
+P1   11:27
+Yeah.
+
+Shristi   11:28
+So yeah, so much for sharing that.
+So I do think you have touched a little bit on this already, but on a holistic perspective, when you think about your interactions for the entire timeline or beyond that. So, have you ever found a time when you actually found it helpful and thought you could use it in the future as well?
+
+P1   11:37
+Mm-hmm. Umm. So I think um.. Like even though I thought this like itinerary process was like helpful and that it did better than what I expected. Uh, I know that other like AI models can do better.
+
+Shristi   12:24
+Umm.
+
+P1   12:24
+Like I I know I know for a fact that copilot will give me sources on like what it's telling me?
+And because there are like other models that would do better, I don't know if I would ever use this again. Umm, I would say like the itinerary.
+
+Shristi   12:40
+Umm.
+
+P1   12:43
+A recommendation was definitely like the best interaction that I had with the model throughout the diary study and maybe like the only reason why I would use it again is if, like Copilot doesn't load on my phone and I'm like out and maybe like using the Snapchat is like quicker.
+
+Shristi   13:01
+Umm.
+Umm, OK, thank you.
+So..so among the experiences that you had and maybe you had some..a pre-existing expectations on what the tool would do. So do you have an experience where my AI met your expectations when you were starting the task versus what you got back?
+
+P1   13:34
+Umm. So from what I remember, I think um. MyAI like typically met my expectation.
+I like. I do wanna preface by saying that my expectation for it is pretty low like..like I just kind of expected to understand what I'm asking and give me what I'm asking for and for the most part I think it did that like almost every time.
+
+Shristi   13:55
+Hmm hmm.
+
+P1   14:06
+Umm.
+Like if I'm asking for itinerary, it would give me an itinerary with stuff to do, and if I'm asking it to recommend me something to buy, it will give me something to buy. But like I think that's where it like stops impressing me. Umm, because like. For example, on like the one where I was asking it like what should I buy? It gave me like 1 real option.
+Umm. And it was a good option. It's like a like..it recommended me a backpack that I already have and like I love that backpack, but I like, I think to like go above and beyond. It should have like asked me or it should have given me like multiple options from different brands and like..link me to like reviews.
+
+Shristi   14:52
+Mm-hmm.
+
+P1   14:56
+Like from real people or like reasoning why it like it thinks these backpacks are like high quality, it should have given me like like links with thumbnails of these products.
+
+Shristi   15:10
+Yep.
+
+P1   15:11
+It did give me links but the links were broken, but at least it took me to like the the company site for like the backpack. So I guess like. For the most part, like I, I am like impressed that like for the most part it does understand what I'm asking for, but like it doesn't do anything more than that.
+
+Shristi   15:30
+Umm. Given of course.
+OK, makes sense.
+So moving on, so how much effort was required in general to use the chatbot?
+
+P1   15:46
+Umm overall I it it was pretty effortless. Um, I thought that it was generating ideas pretty quickly. Umm. And I felt like I could be a more more casual with, like talking to it. Like I didn't have to like form like very formal prompts because I felt like I was talking to like a person or not a person but just like some entity with a face. And sometimes like it didn't understand exactly what I was getting at, but I would like to clarify for it and then it would help me like it would do it correctly most of the time.
+
+Shristi   16:30
+Umm OK.
+
+P1   16:33
+So pretty effortless.
+
+Shristi   16:36
+OK.
+So do you think any special skills or needed to use this chatbot well?
+
+P1   16:47
+Umm. I not skills, but I think like in order for you to have a good time using this chat box or chat bot. Sorry.
+
+Shristi   17:00
+Umm.
+
+P1   17:01
+You would need to like calibrate your expectations correctly like I think you need to go into it like having the right expectations.
+Like if you expected that it would give you like very detailed responses with sources like, you would have for like chat, GPT or copilot, I think you would be sorely disappointed.
+And if you were talking to it and expecting it to be like a real human, then you might also be disappointed because it's like it's it is kind of human-like but like like I can tell I'm not talking to a human.
+
+Shristi   17:42
+Umm.
+
+P1   17:44
+So yeah, I think overall it's just know what it is and don't expect more from it.
+
+Shristi   17:52
+OK, so did you encounter any specific obstacles when you were using the tool?
+
+P1   18:05
+And so some of the links were broken. That's like a I think the bigger obstacles that I can think of. Umm. And that like it gave me recommendations for the wrong city. But overall I..I don't think there's any big ones.
+
+Shristi   18:29
+Hmm.
+So when it provided you the wrong recommendations or or provided inadequate responses, did you attempt to resolve the situation and did something else to get the right answers?
+
+P1   18:43
+Umm, yeah, hold on. I'm my air pods died. Uh.
+
+Shristi   18:49
+OK.
+
+P1   18:52
+OK.
+Can you guys hear me alright?
+
+Shristi   18:54
+Yeah, we do.
+
+P1   18:56
+Uh, yeah.
+So whenever it gave me like inadequate recommendations, I would like be more explicit in what I'm asking for. Umm. And I think like for the example where I was asking it for a backpack recommendations I and it didn't give me like links with thumbnails. I also again like.
+Can you give me links with pictures?
+So I like know what I'm looking at and actually I think that time it didn't give me any links with pictures, so it was still like kind of failing.
+But in other times.
+I think also in that same example I was asking it like can you suggest me like specific models of backpacks within this brand and like specific colors.
+It then gave me specific models but not specific colors.
+
+Shristi   20:00
+Umm. OK. Makes sense.
+So when you are using it and you run into any problems, so do you think you have access to necessary resources? Maybe a help page, a support page or maybe substantial support from from the application or software to use the specific feature properly.
+
+P1   20:27
+Actually no, I like I I wasn't aware that like, maybe there's like a help option. Or that like there's anything on the app that I could go to to understand how to use the tool better. It was pretty much like here's the AI. Now talk to it.
+
+Shristi   20:50
+OK. Yeah. Yeah, makes sense.
+So I'll I'll move a little bit further and ask you so have you ever heard anybody else talk about this feature? It might be a friend, acquaintance or media outlet. I think you did say you saw some things, I think maybe on the social media, others talking about it.
+
+P1   21:12
+Umm.
+
+Shristi   21:14
+So can you tell us a few examples of what you had heard?
+
+P1   21:18
+Yeah. So I think a lot of people. A lot of people thought of this AI model as like a human entity, umm, and they. And because of that, they would ask it questions that, like you would ask like other humans and like, try to be funny about it or like, try to joke with it.
+
+Shristi   21:48
+Umm.
+
+P1   21:48
+Uh, or like banter with it?
+And a lot of times the chatbot like.doesn't want to entertain those sort of conversations.
+So like. I don't remember. I..I remember one specifically, someone on. Like the Internet, I think I saw it on Twitter. Someone said something like mildly inappropriate to the chat box, and like the chat bot was like. Hey, now you're being inappropriate. I'm gonna put you in time out.
+
+Shristi   22:32
+Oh really?
+
+P1   22:33
+Yeah, it's like, OK, I'm gonna stop talking to you for the next 10 minutes. Um and I..I thought it was funny. Umm.
+
+Shristi   22:43
+Umm.
+
+P1   22:46
+Umm.
+And yeah, I think I I've also heard of my friends try to say things to it.
+That's like maybe like slightly inappropriate or like things that like you wouldn't logically expect a cha bot to be able to answer.
+Like I think they were just trying to, like, tease it and they would get like the same sort of like awkward answers.
+
+Shristi   23:07
+Yeah.
+
+P1   23:11
+Like I don't know what you're talking about or like. I don't like talking about this. Please stop talking to me for the next 10 minutes. Like, sort that sort of thing.
+
+Shristi   23:21
+Yeah.
+
+P1   23:23
+So yeah, I think that's all the everything I've heard about from other people.
+
+Shristi   23:28
+OK, so so have there been any sources or maybe somebody you know or is something that has been posted on the Internet that kind of made you curious to try it or use it?
+
+P1   23:43
+Umm, I would say no.
+Because all the situations online the I saw were usually like uncomfortable situations or like awkward interactions that are funny.
+But it's like it's not interactions that I personally wanna spend time like doing.
+
+Shristi   24:10
+Makes sense.
+Ohm so.
+So if if you were to make a recommendation to your own friends, or maybe family or any person that you know, would you recommend this chatbot to anyone?
+
+P1   24:26
+Umm.
+I'm pretty. Ohm on. I..I don't think I would actually recommend it to anyone for like a real purpose. Umm. Like umm. I think. Yeah, because like I know there are other models who do the same things better. And so I would rather recommend my friends to use a better model, but I might say like. Uh.
+What am I trying to say? I guess it's like it's. A lot of like, maybe a lot of things I've been seeing on social media are people trying to, like, break this chatbot like they're trying to, like, say, like, really outlandish things to it, to, like, break it and then get, like, a funny interaction out of it.
+
+Shristi   25:28
+Umm.
+
+P1   25:36
+So like I might like to suggest it to my friend, like I don't think it's used forever.
+
+Shristi   25:36
+Umm.
+
+P1   25:41
+Anything but it might say something funny back to you that that's all.
+
+Shristi   25:45
+Yeah, makes sense.
+
+P1   25:49
+Yeah.
+
+Shristi   25:50
+So have you noticed any changes in your social media habits since you started using MyAI?
+
+P1   26:04
+No, I I don't think so.
+
+Shristi   26:07
+Hmm, OK.
+So have you used or are you currently using something that's similar to MyAI?
+
+P1   26:21
+I think the closest thing is probably ChatGPT.
+
+Shristi   26:27
+Umm so so.
+
+P1   26:28
+Which is just, yeah.
+
+Shristi   26:30
+Hmm.
+So, so so when so when you are using chat GPT.
+So do you also use others? Gemini, Copilot? Do you also use other chatbots in search engines?
+
+P1   26:49
+Umm.
+I have used copilot once. I think overall because like I'm used to ChatGPT, I'm less likely to to use like to try out other models. Also, because like I know that a lot of AI models are still like in the very early stages and I don't know if I should like trust a lot of them like for Gemini for example.
+
+Shristi   27:20
+Mm-hmm.
+Umm.
+
+P1   27:29
+Like I know that they've been controversial lately because of some of the things that they've been generating. Umm. So like when I'm constantly like hearing news about, you know, this new AI model is generating inappropriate things, and then this AI model is saying these things that are not factual and stuff. It makes me like less likely to wanna try it out and I guess at least with chat GPT like I think I..I have it like established like. Rapport with it already from using it so much so I feel more comfortable with just sticking with that one, but eventually I think I will try others.
+
+Shristi   28:21
+Umm.
+Umm yeah, sure.
+So do you think there are any similarities between MyAI and chat GPT in in terms of the experience or interactions that you have?
+
+P1   28:40
+I'm yeah, I think so. I think umm. Umm.
+I think like the formatting of answers or similar like they, umm like both models. Make sure that, like the answers are really scannable and I can expect to follow like a certain structure.
+Uh. Of like, you know, like bullet point, bullet point, umm and like be able to just kind of read only what I need.
+And I..I think both are also like somewhat. Impersonal sounding if I'm not specifically asking like the Snapchat AI to like like if I'm not asking a personal question. Umm. Then the answer I'm getting is very like machine-like.
+
+Shristi   29:51
+Umm.
+OK. Makes sense.
+Umm.
+So if you compare ChatGPT and MyAI again, So what do you think are some story game differences you see on both of those things?
+
+P1   30:08
+Umm, I think the the biggest difference I noticed is that I don't think of chat GPT as like an entity with. With a face or like any like human human traits at all, like it's I cannot think of it as like this.
+
+Shristi   30:22
+Umm.
+
+P1   30:31
+Like Ohh knowing like machine somewhere.
+
+Shristi   30:35
+Umm.
+
+P1   30:36
+Where it's like. I think of MyjAI more as like an entity just because like when I talk to it, it's always in a message format and it has a face. But like outside of like the presentation, it doesn't feel much different.
+
+Shristi   31:06
+Yeah, I think that's that's fair.
+So when you were interacting with MyAI, did you get responses that had sponsored content by any chance - sponsored content, ads?
+
+P1   31:19
+Umm.
+Ohh no, I don't think so.
+
+Shristi   31:28
+Ohh OK really OK.
+
+P1   31:30
+Yeah.
+
+Shristi   31:32
+Umm, so uh, so I think I I wanna know a little bit more about you know MyAI responding back and giving you recommendations about restaurants and Austin. So it kind of knew you were in Austin at least.
+
+P1   31:48
+Yeah.
+
+Shristi   31:49
+And you said that, hey, I'm in Austin while talking to it. So. So I don't know if you remember it or not, but do you have your location data turned on Snapchat?
+
+P1   32:02
+Yeah, my location data is turned on and I don't think I ever told it that I live in Austin.
+
+Shristi   32:10
+OK.
+Yeah.
+
+P1   32:11
+Yeah.
+
+Shristi   32:11
+So maybe then if your location is maybe turned on, then it directly directed directed.
+
+P1   32:15
+It just knows, yeah.
+
+Shristi   32:17
+Yeah, it knows and then it just gave you recommendations based on that then.
+OK, so so when you receive any recommendations.
+So for example, you were trying to search for something actually trying to search for something in your location. So how do you feel about the AI constantly tracking your location and giving you recommendations based on that?
+
+P1   32:42
+Umm, so I think like I expected that. Like I sort of expected it to know everything that I have given like the Snapchat platform by myself. So it didn't make me feel any particular way.
+
+Shristi   33:06
+OK, makes sense.
+
+P1   33:08
+Uh, sorry to interject. I actually like because you you were saying like recommendations. I remember like maybe a bigger a big difference I noticed between ChatGPT and Snapchat is like chat. GPT actually saves all of my prompts that I gave to it, and it like lists all the prompts on like the sidebar and select.
+
+Shristi   33:29
+Mm-hmm.
+
+P1   33:33
+It almost encourages me to go back to these prompts and see like reference back to like what I asked before and maybe like ask follow up questions or like ask better Prompts whereas like I think in MyAI. I don't remember if it deletes my answers or not.
+
+Shristi   33:45
+Umm.
+Umm yeah, we think it deletes everything after you finish the conversation.
+
+P1   33:53
+I think there was one [inaudible]. Yeah. So it just like deletes everything, which makes me feel like maybe the response is that it gave me. Isn't that like? Isn't that like? um..Important if it's just gonna disappear like that.
+
+Shristi   34:11
+Hmm. OK. So umm, so I think it was so moving on, I think it was interesting to see you know the game, the game interaction that you have with it. I think I think that was the interaction where you were like umm, I think you you did not have much of a positive experience to what I know from your diary study entry.
+
+P1   34:42
+Uh, yeah.
+
+Shristi   34:42
+Ohh can you reiterate like what you felt when you were, you know, like asking you to play a game? Can you like maybe reflect back on that experience a little bit for us?
+
+P1   34:53
+Yeah. OK. Yeah, I remember this really well because I was like, annoyed at it. I was asking the the AI like let's play a game of what you rather and then it was like. It gave me something lame at 1st and I was like, no, no, give me a better one. And so it gave me A would you rather would you rather be invisible or people to fly?
+
+Shristi   35:15
+This is.
+
+P1   35:20
+And I remember answering uh, I would like to be invisible. So I could go rob the bank. Like this is a joke like like anyone can tell, this is a joke.
+
+Shristi   35:27
+Umm. Yeah.
+
+P1   35:32
+And then it was giving me this whole like like parent parental response. That's like ohh, you know, it's great to have an imagination and all, but please do not use your imagination about breaking the law or doing things that can harm other people. And I was like. Got. Damn it.
+Like this is so uh and I was like, it was a joke. You ever used your imaginations for jokes?
+And then it was like, yeah, I do all the time, actually. And I was like and never talking to this thing again, like or like, making a joke at it.
+
+Shristi   36:11
+Yeah.
+Yeah.
+Yeah, it's kind of counter intuitive when you try to have a joke and it takes it too seriously.
+
+P1   36:22
+Yeah.
+
+Shristi   36:24
+Yeah, that's interesting. So so I also remember that you tried to use the AI for, I think recommending you filters.
+
+P1   36:34
+Ohh yeah.
+
+Shristi   36:34
+Ohm, I'm so.
+So can you like go back a little bit on that day and reiterate your experience with us?
+
+P1   36:42
+Yeah, I think the prompt was like send send it a photo and ask it to like. Analyze a photo and then there was another prompt that was like.
+
+P1   36:56
+Ask it to recommend a filter, so like I tried to combine the two by giving it a picture of my cats and first of all it said at the beginning like ohh I'm not allowed to analyze your photos and then it did anyway.
+
+Shristi   37:00
+Umm.
+Umm.
+
+P1   37:11
+So I don't know what that was about.
+
+Shristi   37:15
+OK.
+
+P1   37:16
+But yeah, it was like ohh cute cat that you have and I was like thanks. Can you recommend me a filter to make me look like a cat and then it gave me a link. It was like here use this link and then from from like the the preview of the link. I could tell it's like some kind of cat filter, but when I click on the link it ended taking me to like the the like the filter homepage.
+
+Shristi   37:45
+Umm.
+
+P1   37:47
+Of the camera like tab.
+
+Shristi   37:49
+The where we where we take, where we take new snaps.
+
+P1   37:53
+Yeah.
+Like when, where you take new slots, snaps and you just like swipe. I think 1 to the right and then you get all the filters.
+
+Shristi   38:00
+Umm.
+
+P1   38:00
+It was just taking me there, like it wasn't taking me to that specific cat filter.
+
+Shristi   38:04
+That OK. Umm, so.
+So when you were not able to reach the specific filter, how how did it make you feel at the time?
+
+P1   38:19
+You know, maybe like if this was like the beginning of the study, I would have asked it like ohh no, no, give me, give me the right link to this filter. This is not the right link, but because I had problems with links from Snapchat AI in the past I was just like it's whatever, yeah.
+
+Shristi   38:45
+Yeah, since I think you've already tried doing that during our shopping task, right.
+
+P1   38:49
+Yeah. Mm-hmm.
+
+Shristi   38:51
+OK. Yeah, makes sense.
+OK.So yeah, moving on a little bit.
+So I think I have a basic idea for this question based on what you've already said, but again, to be more specific I'm asking this question again. So how reliable do you find the responses by MyAI?
+
+P1   39:17
+Yeah. So I'm I'm wondering what like reliable means? Like do you mean like factual?
+
+Shristi   39:24
+Yeah.
+In terms of how how usable those information are, do you trust the responses enough to maybe maybe it's not everything that you wanted, but maybe you wanna build on that knowledge and doing other things. Do you trust its content or recommendations that it makes?
+
+P1   39:45
+Yeah. So from like the very limited use the I have, uh, like the I've only used it like four times.
+So maybe like I would want to like try it a couple more times, but I think at this point I I feel like I could trust it as a jumping off point. Uh, so for example, for the itinerary activity, I would use the things that the IT recommend and like I would Google those places to like do a little more research on my own to see if those places are like places I actually want to go to.
+
+Shristi   40:11
+Umm.
+
+P1   40:31
+But I wouldn't take it at face value.
+
+Shristi   40:38
+Yeah, right.
+
+P1   40:40
+And like, I wouldn't even trust it to like. Umm. Like, I wouldn't even trust like some of those places to be like, realistic for me to go to. Like I would think like, oh, that's the AI know how far these places are from each other?
+
+Shristi   41:01
+Umm.
+
+P1   41:01
+Uh. Or like from the city of Indianapolis, like, does it take those like nuances into account?
+Does it know how expensive it is?
+
+Shristi   41:09
+Umm.
+
+P1   41:11
+Does it even know that those places these places are open, like right now in the winter?
+
+Shristi   41:15
+Yeah.
+
+P1   41:16
+It's like for like minute details.
+I I would do that research on my own.
+
+Shristi   41:23
+Hmm. OK, so maybe you want to use it just as like a starting off point to give you like maybe ideas about where you could start with.
+
+P1   41:34
+Basically, yeah.
+
+Shristi   41:35
+Yeah. OK, fair enough. Umm, so so you. So again, in your interactions, I think you have shared some personal things with AI. For example, your cat picture, or you might have shared something else that we are not aware of. So are there any concerns that you have regarding the information that you share with it? Umm do you have any concerns related to those?
+
+P1   42:11
+Yeah. You know, I feel like I am a little concerned of sending it some photos of myself, but I feel like these concerns are like unfounded because at the same time. I'm I've already made peace that like this Snapchat model knows all the photos that I've taken on Snapchat in the last seven years. So why am I worried about sending it another photo of myself?
+
+Shristi   42:37
+I mean.
+
+P1   42:41
+So I feel like my concern doesn't make sense, but like it's still there I guess, which is why I slanted a photo of my cats instead of myself.
+
+Shristi   42:52
+Umm yeah. Yeah, makes sense. So yeah, uh, those where I think pretty much the questions that we wanted to go to. So, so overall, reflecting on the experience is, do you have anything that you wanna talk about that you think we missed asking for?
+
+P1   43:16
+Umm, no, I thought the questions got me to like present my thoughts pretty comprehensively.
+Um and like overall, even though like I don't think I'll use this again or like umm, even though I didn't get like some of the best responses from it, I'm really glad I tried umm and I'm kind of really curious about how it will like evolve in the future, like potentially they might be able to figure out, umm like some better use cases for it. Or they give the AI more personality or something to make it like more unique compared to other models. So overall, I'm optimistic for the future.
+
+Shristi   44:02
+OK. Yeah. Thank you so much. OK, so since we are done and.
+
+Kadir   44:05
+I have a quick question.
+I have a quick question.
+
+P1   44:09
+Yeah.
+
+Kadir   44:09
+Just before finishing up just you said compared to ChatGPT it gives more human like traits or feelings as if you are talking to an entity with face and then does this kind of relate.
+
+P1   44:24
+Umm.
+
+Kadir   44:27
+I mean, how does this lead to a different sorts of prompting. I mean, do you use different prompts for chat, GPT? Or how does that work on your side? I'm just trying to figure out in fact does this difference in terms of seeing it as an entity or as a more personal entity versus ChatGPT more maybe. More mission like let's say, can you little bit elaborate on that?
+
+P1   44:54
+Yeah. So for the Snapchat AI, I feel more compelled to like greet it. So like I I'm more compelled to say hello. How are you? And then like at the end, the conversation I'm more likely to say goodbye like I know it makes no difference.
+
+Kadir   45:13
+Umm.
+
+P1   45:13
+Probably, but like I'm compelled to want to build rapport with it. Like how I would a human.
+And. I'm also like compelled to be more casual in my speech to it, and like perhaps I'm even.
+
+Kadir   45:29
+Hmm.
+
+P1   45:32
+Umm, less likely to take it seriously because it sounds like a human. Or like my expectation is that it's like a human and so like. Potentially like if I must ask an AI like a important question about like the trajectory of my life, I wouldn't even think about doing that with like the Snapchat AI, and partly because I feel like it's like a entity. Like, I would rather ask like an all knowing like faceless machine like ChatGPT.
+
+Kadir   46:06
+Umm.
+
+Shristi   46:12
+No. Yeah.
+
+Kadir   46:14
+Hmm.
+Hmm, yeah.
+
+Shristi   46:17
+Me, I think I would like to move a little bit on that. So. So for for specifically for Snapchat AI, if you ever you know like use it again or if feel like using it. So I think what what purposes do you think that my AI would be more suitable for?
+
+P1   46:37
+Umm, I think. Umm. I think it's a lot more suitable for like entertainment. Like. Uh, like those, like games that you've mentioned?
+
+Shristi   47:01
+Umm.
+
+P1   47:01
+I'm wondering if I would have had a better time if I had picked like any of the other games.
+Like maybe I could ask me really good trivia and I never knew because I never tried it.
+
+Shristi   47:09
+Umm.
+
+P1   47:11
+Umm. And it would be, I thought, I think it would be fun if it can, like, get some of those games.
+Right. And like, put more like human like elements or like make like better jokes or.
+
+Shristi   47:28
+Umm.
+
+P1   47:30
+If it seemed like more like vulnerable, I guess. Then like. Umm. Like, because like the, the response is a gave me when I was trying to play games with it with it was like sort of like a corporate like liability response. Like do not use this to think about things that will break the law and that just took me out of the my experience completely because I'm aware that I'm talking to a company.
+
+Shristi   47:49
+Umm.
+
+P1   47:59
+So somehow like well, maintaining like liability and all that if they can, like, be more human like and more be more entertaining, I think that'll be uh uh cool use case.
+
+Kadir   48:07
+Umm. So I was gonna in fact come bring the conversation here.
+
+Shristi   48:14
+Umm.
+
+Kadir   48:17
+That's very timely. Umm, you're you're you're seeing it more entertainment purpose, maybe for less serious business, let's say. And then from more like a personal entity, probably you have a different as you said response or expect kind of like kind of thought. But when you see those things, then it seems, how does? How do you feel in, in terms of your feelings? Can you a little bit more elaborate on that?
+
+P1   48:47
+Uh, could you say that again? So like uh?
+
+Kadir   48:51
+Sure, it seems you know you are maybe seeing my AI at a more personal level, let's say, like a maybe not long, not a friend, but at least compared to other AI models. And then for more entertainment purposes for maybe less serious things just to casual and then in response to this, for sure you are expecting that maybe, I don't know, maybe tone maybe, umm, responses which are more maybe less serious or at least closer to human beings.
+
+P1   49:09
+Yes.
+
+Kadir   49:26
+As far as I understand, please correct me if I'm wrong.
+
+P1   49:27
+Yes.
+
+Kadir   49:29
+And how does this affect you as a user? A little bit more if you have. I mean does it, I mean what are your feelings at that time when you start a conversation and then when you don't get the kind of responses you you get from the MyAI?
+
+P1   49:49
+Yeah. So in those situations I felt like I had like, the wrong expectations for it. Like when I was expecting it to act more like a human and it like starts talking to me like a company or like like a more like a machine.
+
+Kadir   50:07
+Mm-hmm.
+
+P1   50:08
+That's where I'm sort of like dialing back on my expectations.
+
+Kadir   50:13
+Umm.
+
+P1   50:15
+And I'm like ohh what? What am I expecting like this is like I guess like. It made me like less invested to like use it, I guess because I'm like, well, the only thing it had going for it was like it maybe was gonna be more conversational and more.
+
+Kadir   50:29
+Umm.
+
+P1   50:40
+Or, uh, like like human?
+Like so.
+
+Kadir   50:46
+Umm.
+
+P1   50:46
+Like if it doesn't even meet those expectations, then I don't know.
+Like why I would use this over like chat, GPT or copilot or other like programs who I know will give me more accurate answers.
+
+Kadir   50:54
+Umm. Yeah. Thanks very much.
+
+P1   51:07
+Yeah, that's a good question. Thanks. Woah you're muted.
+
+Kadir   51:13
+Ohh wait, you're you're muted.
+
+Shristi   51:16
+I do it all the time.
+I'm sorry.
+
+P1   51:18
+Yeah, yeah.
+
+Shristi   51:19
+So yeah, thank you so much for being in the interview. Uh, as you can close out, I'll ask you again. Is there anything that you would like to mention?
+
+P1   51:30
+No, I think you guys cover everything and it was really fun.
+Thanks for inviting me to participate.
+
+Shristi   51:36
+Yeah, yeah, yeah.
+Thank you so much.
+
+Kadir   51:37
+Definitely.
+
+Shristi   51:37
+Yeah, I know it was a long time. So yeah, I really appreciate your participation. OK
+
+Shristi stopped transcription
