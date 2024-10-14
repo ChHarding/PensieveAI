@@ -54,14 +54,17 @@ def load_transcripts(folder_path):
     return transcripts
 
 # Define function to generate a prompt for thematic analysis
-def generate_prompt(transcripts):
+def generate_prompt(transcripts, instruction):
     prompt = "Here are the transcripts:\n\n"
     
     for i, transcript in enumerate(transcripts):
         prompt += f"Transcript {i+1}:\n{transcript}\n\n"
     
-    prompt += "Please provide the major themes along with their descriptions."
+    prompt += "Please provide the major themes along with their descriptions. In each description, include one or more excerpts from participants that align with the theme. Also, if any, return any unusual excerpts containing comment from any participant that does not align none of the themes."
     
+    # Include the instruction provided by the user in the prompt to allow customization in analysis
+    prompt += instruction
+
     return prompt
 
 # Define a function that sends prompt to OpenAI API for analysis using "gpt-4o-mini"
@@ -69,7 +72,7 @@ def analyze_transcripts_with_openai(prompt):
     response = client.chat.completions.create(
         model="gpt-4o-mini",  # Using gpt-4o-mini model for thematic analysis
         messages=[
-            {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions. In the description, include excerpts from participants which aligns with the theme. At the note, if any, mention any unusual comment said by a particular participant found that does not align with any of the themes."},
+            {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions."},
             {"role": "user", "content": prompt}
     ],
         max_tokens=16384,  # This is the max limit for token limits
@@ -88,6 +91,8 @@ def main():
     while True:
         # Get the folder path from the user
         folder_path = input("Please enter the relative path to the folder containing the transcripts (txt, docx, pdf):")
+        # Ask for additional instruction from user to analyze the data
+        instruction = input("Enter additional instructions:")
 
         # Load the transcripts from the folder
         try:
@@ -100,9 +105,9 @@ def main():
             continue
 
         # Generate a prompt that merges the transcript content
-        prompt = generate_prompt(text)
-        len_prompt = len(prompt)
-        est_tokens = len_prompt/4
+        prompt = generate_prompt(text,instruction)
+        #len_prompt = len(prompt)
+        #est_tokens = len_prompt/4
 
         # Print a message to inform the user that the analysis is being performed
         print("Analyzing transcripts... Please wait.")
