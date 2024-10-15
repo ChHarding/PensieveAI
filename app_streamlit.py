@@ -70,7 +70,7 @@ def passcode_entry():
     )
 
     # Page Title and Description outside the container
-    st.markdown('<h1 class="title">Pensieve<span class="highlight">AI</span></h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="title">✨Pensieve<span class="highlight">AI</span></h1>', unsafe_allow_html=True)
     st.markdown(
         '''
         <p class="description">
@@ -87,6 +87,7 @@ def passcode_entry():
     with st.form("passcode_form"):
         passcode = st.text_input("Enter the passcode:", type="password") # input field
         st.form_submit_button('Submit') #submit button
+        st.write("No, 'Alohomora' won't work here!")
 
     # If passcode is entered, check if it's correct
     if passcode:
