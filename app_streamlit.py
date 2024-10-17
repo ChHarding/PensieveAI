@@ -136,7 +136,7 @@ def dashboard():
             margin-bottom: 40px;
             text-align: center;
         }
-       
+
         .footer {
             text-align: center;
             margin-top: 50px;
@@ -163,20 +163,32 @@ def dashboard():
     # File uploader section
     st.markdown('<div class="file-uploader">', unsafe_allow_html=True)
     st.subheader("Upload Your Files")
-    uploaded_files = st.file_uploader("Choose files to upload", accept_multiple_files=True)
-    
-    if uploaded_files:
-        st.markdown('<div class="file-info">', unsafe_allow_html=True)
-        for uploaded_file in uploaded_files:
-            bytes_data = uploaded_file.read()
-            st.write(f"**Filename:** {uploaded_file.name}")
-            st.write(f"**File size:** {len(bytes_data)/1024} KB")
-            # You can add code here to process the file as needed
-        st.markdown('</div>', unsafe_allow_html=True)
+
+    # Create a form with a submit button
+    with st.form("file_upload_form"):
+        uploaded_files = st.file_uploader(
+            "Choose files to upload",
+            accept_multiple_files=True,
+            type=['pdf', 'docx', 'txt']
+        )
+        submit_files = st.form_submit_button("Submit Files")
+
+    if submit_files:
+        if uploaded_files:
+            st.markdown('<div class="file-info">', unsafe_allow_html=True)
+            for uploaded_file in uploaded_files:
+                bytes_data = uploaded_file.read()
+                file_size_mb = len(bytes_data) / (1024 * 1024)
+                st.write(f"**Filename:** {uploaded_file.name}", f"| **File size:** {file_size_mb:.2f} MB")
+            
+                # Check file size limit (5 MB)
+                if file_size_mb > 5:
+                    st.error(f"File '{uploaded_file.name}' exceeds the 5 MB size limit and will not be processed.")
+                    continue  # Skip processing this file
+            st.markdown('</div>', unsafe_allow_html=True)
+        else:
+            st.warning("Please upload at least one file before submitting.")
     st.markdown('</div>', unsafe_allow_html=True)
-
-    # Add handling for other file types as needed
-
 
     # Footer
     st.markdown('<div class="footer">© 2024 PensieveAI. All rights reserved.</div>', unsafe_allow_html=True)
