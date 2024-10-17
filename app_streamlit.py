@@ -151,7 +151,7 @@ def dashboard():
     # Header
     st.markdown('<div class="dashboard-header">', unsafe_allow_html=True)
     st.markdown('<h1>Pensieve<span class="highlight">AI</span> Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="welcome">Welcome to the main application interface, where you can begin uploading files for analysis.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="welcome">Welcome to the dashboard! Upload files for analysis:</p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
     # Logout button
@@ -160,7 +160,23 @@ def dashboard():
         st.session_state.authenticated = False
         st.rerun()
 
+    # File uploader section
+    st.markdown('<div class="file-uploader">', unsafe_allow_html=True)
+    st.subheader("Upload Your Files")
+    uploaded_files = st.file_uploader("Choose files to upload", accept_multiple_files=True)
+    
+    if uploaded_files:
+        st.markdown('<div class="file-info">', unsafe_allow_html=True)
+        for uploaded_file in uploaded_files:
+            bytes_data = uploaded_file.read()
+            st.write(f"**Filename:** {uploaded_file.name}")
+            st.write(f"**File size:** {len(bytes_data)/1024} KB")
+            # You can add code here to process the file as needed
+        st.markdown('</div>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
+
+    # Add handling for other file types as needed
+
 
     # Footer
     st.markdown('<div class="footer">© 2024 PensieveAI. All rights reserved.</div>', unsafe_allow_html=True)
