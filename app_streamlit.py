@@ -167,9 +167,11 @@ def dashboard():
     # Create a form with a submit button
     with st.form("file_upload_form"):
         uploaded_files = st.file_uploader(
-            "Choose files to upload",
+            label="Upload Your Files Here:",
+            key="upload_success",
             accept_multiple_files=True,
-            type=['pdf', 'docx', 'txt']
+            type=['pdf', 'docx', 'txt'],
+            #on_change=process_file
         )
         submit_files = st.form_submit_button("Submit Files")
 
@@ -181,9 +183,9 @@ def dashboard():
                 file_size_mb = len(bytes_data) / (1024 * 1024)
                 st.write(f"**Filename:** {uploaded_file.name}", f"| **File size:** {file_size_mb:.2f} MB")
             
-                # Check file size limit (5 MB)
-                if file_size_mb > 5:
-                    st.error(f"File '{uploaded_file.name}' exceeds the 5 MB size limit and will not be processed.")
+                # Check file size limit (100 MB)
+                if file_size_mb > 100:
+                    st.error(f"File '{uploaded_file.name}' exceeds the 100 MB size limit and will not be processed.")
                     continue  # Skip processing this file
             st.markdown('</div>', unsafe_allow_html=True)
         else:
