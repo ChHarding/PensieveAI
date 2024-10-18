@@ -54,14 +54,17 @@ def load_transcripts(folder_path):
     return transcripts
 
 # Define function to generate a prompt for thematic analysis
-def generate_prompt(transcripts):
+def generate_prompt(transcripts, instruction):
     prompt = "Here are the transcripts:\n\n"
     
     for i, transcript in enumerate(transcripts):
         prompt += f"Transcript {i+1}:\n{transcript}\n\n"
     
-    prompt += "Please provide the major themes along with their descriptions."
+    prompt += "Please provide the major themes along with their descriptions. In each description, include one or more excerpts from participants that align with the theme. Also, if any, return any unusual excerpts containing comment from any participant that does not align none of the themes."
     
+    # Include the instruction provided by the user in the prompt to allow customization in analysis
+    prompt += instruction
+
     return prompt
 
 # Define a function that sends prompt to OpenAI API for analysis using "gpt-4o-mini"
@@ -69,33 +72,59 @@ def analyze_transcripts_with_openai(prompt):
     response = client.chat.completions.create(
         model="gpt-4o-mini",  # Using gpt-4o-mini model for thematic analysis
         messages=[
-            # This first message is prob not needed but can be useful in some cases, maybe you want the AI to act like a HCI researcher.
-            {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions."},   
-        # this is the actual question
-        {
-            "role": "user",
-            "content": prompt,
-        }
+            {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions."},
+            {"role": "user", "content": prompt}
     ],
         max_tokens=16384,  # This is the max limit for token limits
-        temperature=0.4,  # Controls creativity level
+        temperature=0,  # Controls creativity level
     )
     return response.choices[0].message.content
 
-# Test if the function works with Mixed folder containing txt, docx, and pdf files
-text = load_transcripts("/Users/shristishrestha/Documents/Grad School/Fall24/HCI584/OpenAI_Test/Transcripts/Mixed")
-print(text)
-print(len(text))
-
-# Generate a prompt for thematic analysis
-prompt = generate_prompt(text)
-print(prompt)
-
 # Instantiate a Python API client that configures the environment for communicating with OpenAI api
 client = OpenAI(
-    api_key=open_ai_api_key
-)
+        api_key=open_ai_api_key
+    )
 
-# Use OpenAI api to analyze the transcripts
-result = analyze_transcripts_with_openai(prompt)
-print(result)
+def main():
+
+    # Create a loop to allow multiple attempts
+    while True:
+        # Get the folder path from the user
+        folder_path = input("Please enter the relative path to the folder containing the transcripts (txt, docx, pdf):")
+        # Ask for additional instruction from user to analyze the data
+        instruction = input("Enter additional instructions:")
+
+        # Load the transcripts from the folder
+        try:
+            text = load_transcripts(folder_path)
+            if not text:
+                print("No valid transcript files found in the folder. Please try again.")
+                continue
+        except Exception as e:
+            print(f"Error loading transcripts: {e}")
+            continue
+
+        # Generate a prompt that merges the transcript content
+        prompt = generate_prompt(text,instruction)
+        #len_prompt = len(prompt)
+        #est_tokens = len_prompt/4
+
+        # Print a message to inform the user that the analysis is being performed
+        print("Analyzing transcripts... Please wait.")
+
+        # Use OpenAI API to analyze the transcripts
+        try:
+            result = analyze_transcripts_with_openai(prompt)
+            print("\nThematic Analysis Results:\n")
+            print(result)
+        except Exception as e:
+            print(f"Error interacting with OpenAI API: {e}")
+            continue
+
+        # Ask if the user wants to process another folder
+        retry = input("\nWould you like to analyze more transcripts? (yes/no): ").strip().lower()
+        if retry != 'yes':
+            print("Exiting. Thank you!")
+            break
+
+main()
