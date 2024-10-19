@@ -162,12 +162,11 @@ def dashboard():
 
     # File uploader section
     st.markdown('<div class="file-uploader">', unsafe_allow_html=True)
-    st.subheader("Upload Your Files")
 
     # Create a form with a submit button
     with st.form("file_upload_form"):
         uploaded_files = st.file_uploader(
-            label="Upload Your Files Here:",
+            label="Upload Your Files:",
             key="upload_success",
             accept_multiple_files=True,
             type=['pdf', 'docx', 'txt'],
