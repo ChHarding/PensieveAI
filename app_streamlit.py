@@ -173,6 +173,10 @@ def dashboard():
             type=['pdf', 'docx', 'txt'],
             #on_change=process_file
         )
+        
+        # Input for additional instructions
+        instruction = st.text_area("Enter additional instructions (optional):", height=100)
+
         submit_files = st.form_submit_button("Submit Files")
 
     if submit_files:
