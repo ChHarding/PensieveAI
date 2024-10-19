@@ -184,7 +184,7 @@ def dashboard():
             for uploaded_file in uploaded_files:
                 bytes_data = uploaded_file.read()
                 file_size_mb = len(bytes_data) / (1024 * 1024)
-                st.write(f"**Filename:** {uploaded_file.name}", f"| **File size:** {file_size_mb:.2f} MB")
+                st.write(f"**File name:** {uploaded_file.name}", f"| **File size:** {file_size_mb:.2f} MB")
             
                 # Check file size limit (100 MB)
                 if file_size_mb > 100:
