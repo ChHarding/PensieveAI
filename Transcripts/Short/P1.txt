@@ -1,0 +1,207 @@
+Shristi 0:07
+Ok.
+OK, so we have started the recording and transcription.
+I just move ahead and start with a few warm-up questions.
+So can you tell us a little bit about yourself?
+P1 0:21
+Sure. Umm.
+So my name is [--].
+I'm currently a second-year master's student in the HCI program.
+This is my second to last semester.
+Umm before that I'm.
+I'm from [a US state], but originally I was born in [an East Asian Country] and I went to [a US
+university] for mechanical engineering and I did that for I did Engineering for like 2 years.
+Decided that it wasn't for me, so I wanted to pivot to something a little more creative and so
+here I am in the HCI program and my goal eventually is to be a UX designer.
+Shristi 1:02
+Umm, thank you.
+So which social media platforms are using currently?
+P1 1:10
+Umm, right now I think my my biggest ones are probably like Reddit and Tiktok.
+Shristi 1:22
+And Tiktok.
+OK umm so.
+Umm.
+So when did you for Snapchat, since we've already settled that you’ve been using Snapchat for
+some time and you use it at least once a week, so when did you so?
+P1 1:31
+Umm.
+Shristi 1:38
+Do you remember when you started using Snapchat?
+P1 1:41
+Yeah, I started using Snapchat when I was in high school, so it has been about seven years
+since I first started using it.
+And I was definitely a lot more active on it early on.
+I'd say, like I was active in high school and for most of College, but then after college, I think
+guys started caring less about it just because, like, a lot of my friends also started caring less
+about it and they stopped posting as much.
+And my primary usage of Snapchat is just to check up on my friend's stories.
+Shristi 2:15
+Umm.
+P1 2:20
+So because like umm, we're not like actively on it as much.
+And my friends aren't.
+I don't go it on it too much anymore.
+I literally check it like once a week just to see if there's anything going on, but usually there's
+nothing.
+Shristi 2:36
+Umm.
+OK.
+So yeah, so when you say you're checking what's going on, are you just checking the stories or
+are you also checking individual texts from your friends, family, et cetera?
+P1 2:51
+Yeah.
+So I'm like permanently on do not disturb mode, so I like don't really get any notifications from
+any social media. So I have to go in there and check if like anyone sent me a message and
+usually it would be like my friend sent me a snap like directly to me and if not then I'll check like
+other people's stories.
+Shristi 3:16
+OK, so do you also actively, you know, snap something and send it to your friends or family?
+P1 3:23
+I do.
+It's usually like as a response to other people, or maybe like friends that I haven't seen in a
+while.
+Shristi 3:30
+Yeah, and.
+P1 3:34
+And like I'm not, I don't really like text them or like. Umm. Interact with them much on other
+social media, but like we used to. So uh, snap back and forth a lot.
+So I would be more inclined to use Snapchat to like talk with those friends.
+Like if I think of them every once in a while.
+Shristi 3:54
+Hmm.
+OK, makes sense.
+So how do you ever used or tried using the MyAI feature before this study?
+P1 4:03
+Umm, I actually have not used it.
+I..I remember seeing it like when I updated my app at one point and my first thought was like I
+really had no interest in trying it.
+Umm.
+Shristi 4:20
+Yeah. OK.
+P1 4:21
+It just seemed like it's like another..like digital products that has like co-opted AI for, like, no
+reason in particular. And I've seen, like a couple funny interactions on social media about it.
+Like back when it was first released and it wasn't like that good yet and like there were some
+some funny things I saw on social media. So just from like that experience, I..I never really tried
+it out.
+Shristi 4:53
+Yeah, yeah, of course.
+Ohm.
+So I will move to questions about the usefulness that you saw while interacting with it for the
+past few days now.
+P1 5:06
+Umm.
+Shristi 5:06
+Umm, can you walk me through an example out of like any of the interactions that you did,
+within and outside of our study where you could show me an example of how you used MyAI?
+So you can show like maybe an example of where you started and how it went.
+P1 5:23
+Sure.
+Shristi 5:27
+If you remember it.
+P1 5:29
+Yeah.
+So did you say like it's OK to use an example that I already mentioned in the study?
+Shristi 5:35
+Yeah, of course.
+P1 5:37
+OK, sure.
+So the one I remember the most was my first time using it.
+Umm.
+And it was to schedule a, excuse me, to plan an itinerary for a city like a three-night trip in any
+any city in the US.
+Shristi 5:56
+Umm.
+P1 6:00
+And so for that one.
+I wanted to do Indianapolis because that's where I'm from, and so I thought it would help me.
+Shristi 6:07
+Umm.
+P1 6:08
+Like decide better if like the..like the recommendations are good.
+Shristi 6:16
+Mm-hmm.
+P1 6:16
+So umm, so I remember just like logging in and like I guess I thought of the AI more as like a
+person because it like has a Avatar.
+So like I think the first thing I said was like, hi, how are you?
+Shristi 6:28
+Umm.
+P1 6:32
+Like how I would talk to a person, but like I wouldn't be saying that to like chat gibt or like any
+other like faceless AI model.
+Shristi 6:41
+No.
+P1 6:42
+So it was interesting that I like felt like doing that.
+And then I..I went into asking like, what I would recommend for a three-night itinerary in
+Indianapolis.
+And I've noticed that my like conversation.
+No, like style was a lot more like casual, like I wasn't too like..careful about like ohh I need to
+make this prompt like perfect so this machine can understand what I'm saying. Like I was sort
+of just speaking like how I would to old friend. Umm. And it gave me back.
+Well, at first I think I like thought it was a three-day itinerary instead of a three night. So I asked
+for a three day and it it gave me back and itinerary that I thought it was like actually decent like I
+would. I would be happy like doing these things for three days. And I remember like sending
+the itinerary to my friends. I have a group chat with my friends from Indianapolis and I was like
+hey, the Snapchat AI recommended me this. So like, since you guys are also from Indianapolis,
+like, what do you think just so I have like more opinions than just my own and they also thought
+it was pretty good. But then one of them was like, you know, I think copilot would give you a
+better answer because like, they would actually source their like facts.
+P1 8:15
+Umm.
+So yeah, even though the suggestions were good and like Snapchat, AI did give me like a
+couple links to like, some of the places it was recommending. I think it was not like super
+detailed about how it reached those conclusions.
+Shristi 8:34
+Umm.
+P1 8:35
+And it didn't really give me any like sources of like why it thought that this would be a good idea
+to recommend to me. Even though the final recommendations were good and I also I..I've
+realized I made a mistake by saying a three-day itinerary instead of a three-night.
+So I asked it again. Like, hey, could you? Add an extra day in to the itinerary.
+I actually wanted three night and it did add an.. an extra one day.. like it understood what I was
+saying, which I was like impressed by.
+Umm. And I also asked for like like this is just for my own fun. Like I was asking, like how much
+should I budget for this trip? And so it gave me an initial budget for three nights, and then an
+updated budget for three days. And I thought I wasn't impressed at like it could do that also,
+even though, like, I think looking closely at it, I think some of the estimations were like a little off
+like it estimated that I would spend like 20 bucks for Uber for the entire like, 4 days.
+Shristi 9:30
+Umm.
+P1 9:45
+And I'm like, I don't know about that.
+Shristi 9:48
+Yeah.
+P1 9:48
+And also like no source is either about like how it reached these estimations. So yeah, from
+from that experience I think I was like pleasantly surprised at like how good it did or like that
+gave me like like, actually, like good recommendations. But I was like, disappointed that it didn't
+give me sources.
+Umm oh and I also remember. I think later in that conversation I was I wanted to try to ask it
+something else. So I said. So what are some like Asian restaurants you would recommend to
+me in Indianapolis? Because I love like Asian food and it recommended me a bunch of places in
+Austin, TX, which is like the city I currently live in.
+Shristi 10:46
+Mm-hmm.
+P1 10:46
+And so I think at some point in the conversation..it like lost the train of thought and like it didn't
+think I was talking about the same things anymore.
+Shristi 10:55
+Yeah.
+P1 10:58
+Like the same like trip when I actually was, but I like.
+Shristi 10:59
+Umm, you know?
+P1 11:02
+I thought I was clear personally that we were still talking about the same trip.
+Umm, but yeah umm after like I corrected it..it was fine.
+Shristi 11:14
+Ohh OK so yeah, so sometimes it does it. So you were talking about what, like a few things in a
+chain? I think sometimes ChatGPT does that too. We're talking about a certain topic and then it
+forgets about it and gives you something else.
+P1 11:27
+Yeah.
+Shristi 11:28
+So yeah, so much for sharing that.
