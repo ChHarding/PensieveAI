@@ -1,4 +1,10 @@
 import streamlit as st # pip install streamlit --upgrade
+import os
+import tempfile
+from openai import OpenAI # pip install openai on terminal
+from keys import open_ai_api_key # import OpenAI Key from keys.py
+import docx # pip install python-docx on terminal
+import PyPDF2  # pip install PyPDF2 on terminal
 
 # Set page configuration
 st.set_page_config(
@@ -102,6 +108,93 @@ def passcode_entry():
     # Footer
     st.markdown('<div class="footer">© 2024 PensieveAI. All rights reserved.</div>', unsafe_allow_html=True)
 
+# Function to save uploaded file in a temporary directory
+def save_uploaded_file(uploaded_file, temp_dir):
+    try:
+        # Create a full path for the file
+        save_path = os.path.join(temp_dir, uploaded_file.name)
+        # Write the file to the temporary directory
+        with open(save_path, "wb") as f:
+            f.write(uploaded_file.getbuffer())
+        #st.success(f"File '{uploaded_file.name}' saved to {temp_dir}")
+        st.success("Upload is successful.")
+        
+        # Return the folder path so that all documentes inside it can be read
+        return temp_dir
+    except Exception as e:
+        st.error(f"Error saving file '{uploaded_file.name}': {e}")
+        return None
+
+# Function to read .txt files
+def read_txt(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return file.read()
+    
+# Function to read .docx files
+def read_docx(file_path):
+    doc = docx.Document(file_path)
+    full_text = []
+    for para in doc.paragraphs:
+        full_text.append(para.text)
+    return '\n'.join(full_text)
+
+# Function to read .pdf files using PyPDF2
+def read_pdf(file_path):
+    pdf_text = ""
+    with open(file_path, 'rb') as file:
+        reader = PyPDF2.PdfReader(file)
+        for page_num in range(len(reader.pages)):
+            page = reader.pages[page_num]
+            pdf_text += page.extract_text()
+    return pdf_text
+
+# Function to load multiple transcript files (supporting txt, docx, pdf)
+def load_transcripts(folder_path):
+    transcripts = []
+    for filename in os.listdir(folder_path):
+        file_path = os.path.join(folder_path, filename)
+        if filename.endswith(".txt"):
+            transcripts.append(read_txt(file_path))
+        elif filename.endswith(".docx"):
+            transcripts.append(read_docx(file_path))
+        elif filename.endswith(".pdf"):
+            transcripts.append(read_pdf(file_path))  
+        else:
+            print(f"Unsupported file format: {filename}")
+    return transcripts
+
+# Define function to generate a prompt for thematic analysis
+def generate_prompt(transcripts, instruction):
+    prompt = "Here are the transcripts:\n\n"
+    
+    for i, transcript in enumerate(transcripts):
+        prompt += f"Transcript {i+1}:\n{transcript}\n\n"
+    
+    prompt += "Please provide the major themes along with their descriptions. In each description, include one or more excerpts from participants that align with the theme. Also, if any, return any unusual excerpts containing comment from any participant that does not align none of the themes."
+    
+    # Include the instruction provided by the user in the prompt to allow customization in analysis
+    prompt += instruction
+
+    return prompt
+
+# Define a function that sends prompt to OpenAI API for analysis using "gpt-4o-mini"
+def analyze_transcripts_with_openai(prompt):
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",  # Using gpt-4o-mini model for thematic analysis
+        messages=[
+            {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions."},
+            {"role": "user", "content": prompt}
+    ],
+        max_tokens=16384,  # This is the max limit for token limits
+        temperature=0,  # Controls creativity level
+    )
+    return response.choices[0].message.content
+
+# Instantiate a Python API client that configures the environment for communicating with OpenAI api
+client = OpenAI(
+        api_key=open_ai_api_key
+    )
+
 # Function to display the dashboard page
 def dashboard():
     # Apply custom CSS styles
@@ -151,7 +244,7 @@ def dashboard():
     # Header
     st.markdown('<div class="dashboard-header">', unsafe_allow_html=True)
     st.markdown('<h1>Pensieve<span class="highlight">AI</span> Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="welcome">Welcome to the dashboard! Upload files for analysis:</p>', unsafe_allow_html=True)
+    st.markdown('<p class="welcome">Welcome to the dashboard!</p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
     # Logout button
@@ -181,16 +274,51 @@ def dashboard():
     if submit_files:
         if uploaded_files:
             st.markdown('<div class="file-info">', unsafe_allow_html=True)
+
+            # Create a temporary directory
+            temp_dir = tempfile.mkdtemp()
+            #st.info(f"Temporary directory created at {temp_dir}")
+
             for uploaded_file in uploaded_files:
                 bytes_data = uploaded_file.read()
                 file_size_mb = len(bytes_data) / (1024 * 1024)
-                st.write(f"**File name:** {uploaded_file.name}", f"| **File size:** {file_size_mb:.2f} MB")
             
-                # Check file size limit (100 MB)
-                if file_size_mb > 100:
-                    st.error(f"File '{uploaded_file.name}' exceeds the 100 MB size limit and will not be processed.")
+                # Check file size limit (200 MB)
+                if file_size_mb > 200:
+                    st.error(f"File '{uploaded_file.name}' exceeds the 200 MB size limit and will not be processed.")
                     continue  # Skip processing this file
+
+                # Save each uploaded file in a temporary directory
+                folder_path = save_uploaded_file(uploaded_file, temp_dir)
+
+                # Reset the file pointer to the beginning
+                uploaded_file.seek(0)
+
+                #Display file name and size after upload
+                st.write(f"**File name:** {uploaded_file.name}", f"| **File size:** {file_size_mb:.2f} MB")
+
             st.markdown('</div>', unsafe_allow_html=True)
+
+            # Load transcripts from the temporary directory
+            transcripts = load_transcripts(temp_dir)
+            if not transcripts:
+                st.error("No valid transcript files found in the uploaded files.")
+            else:
+                # Generate the prompt
+                prompt = generate_prompt(transcripts, instruction)
+                
+                # Display a message indicating that analysis is in progress
+                st.info("Analyzing transcripts... Please wait.")
+
+                # Call the OpenAI API
+                try:
+                    result = analyze_transcripts_with_openai(prompt)
+                    st.success("Analysis Complete!")
+                    st.markdown("### Thematic Analysis Results:")
+                    st.write(result)
+                except Exception as e:
+                    st.error(f"Error interacting with OpenAI API: {e}")
+                    
         else:
             st.warning("Please upload at least one file before submitting.")
     st.markdown('</div>', unsafe_allow_html=True)
