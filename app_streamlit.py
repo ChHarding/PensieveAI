@@ -117,7 +117,7 @@ def save_uploaded_file(uploaded_file, temp_dir):
         with open(save_path, "wb") as f:
             f.write(uploaded_file.getbuffer())
         #st.success(f"File '{uploaded_file.name}' saved to {temp_dir}")
-        st.success("Upload is successful.")
+        #st.success("Upload is successful.")
         
         # Return the folder path so that all documentes inside it can be read
         return temp_dir
@@ -208,11 +208,11 @@ def dashboard():
             font-family: 'Roboto', sans-serif;
             background-color: #d8cbe5;
             color: #f0f0f0;
-            text-align: center;
+            text-align: left;
         }
         .dashboard-header {
             text-align: center;
-            padding: 50px 0;
+            padding: 10px 0;
         }
         h1 {
             font-size: 48px;
@@ -226,7 +226,7 @@ def dashboard():
         .welcome {
             font-size: 16px;
             color: #2f023c;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             text-align: center;
         }
 
@@ -236,22 +236,23 @@ def dashboard():
             color: #2f023c;
             font-size: 14px;
         }
+
         </style>
         """,
         unsafe_allow_html=True
     )
-
-    # Header
-    st.markdown('<div class="dashboard-header">', unsafe_allow_html=True)
-    st.markdown('<h1>Pensieve<span class="highlight">AI</span> Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="welcome">Welcome to the dashboard!</p>', unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
 
     # Logout button
     logout = st.button("Logout", key="logout")
     if logout:
         st.session_state.authenticated = False
         st.rerun()
+        
+    # Header
+    st.markdown('<div class="dashboard-header">', unsafe_allow_html=True)
+    st.markdown('<h1>Pensieve<span class="highlight">AI</span> Dashboard</h1>', unsafe_allow_html=True)
+    st.markdown('<p class="welcome">Welcome to the dashboard!</p>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
 
     # File uploader section
     st.markdown('<div class="file-uploader">', unsafe_allow_html=True)
@@ -315,7 +316,7 @@ def dashboard():
                     result = analyze_transcripts_with_openai(prompt)
                     st.success("Analysis Complete!")
                     st.markdown("### Thematic Analysis Results:")
-                    st.write(result)
+                    st.markdown(result)
                 except Exception as e:
                     st.error(f"Error interacting with OpenAI API: {e}")
                     
