@@ -182,7 +182,7 @@ def generate_prompt(transcripts, instruction):
 
 # Define a function that sends prompt to OpenAI API for analysis using "gpt-4o-mini"
 def analyze_transcripts_with_openai(prompt):
-    response = Client.chat.completions.create(
+    response = client.chat.completions.create(
         model="gpt-4o-mini",  # Using gpt-4o-mini model for thematic analysis
         messages=[
             {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions."},
