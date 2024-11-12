@@ -207,12 +207,15 @@ def generate_pdf(result_text):
             self.set_auto_page_break(auto=True, margin=15)
             self.set_font("Arial", size=12)
         
-        def write_markdown(self, markdown_text):
+         def write_markdown(self, markdown_text):
+            # Regular expression pattern for bold and italic text
+            pattern = r'(\*\*\*.+?\*\*\*|___.+?___|\*\*.+?\*\*|__.+?__|\*.+?\*|_.+?_)'
             lines = markdown_text.split('\n')
             for line in lines:
                 line = line.strip()
                 if not line:
-                    continue  # Skip empty lines
+                    self.ln()
+                    continue  # Add a line break for empty lines
                 # Heading
                 if line.startswith('#'):
                     level = len(re.match(r'#+', line).group(0))
@@ -228,19 +231,63 @@ def generate_pdf(result_text):
                     self.multi_cell(0, 10, txt=text)
                     self.ln()
                     self.set_font("Arial", size=12)
-                # Bullet points
-                elif line.startswith('- ') or line.startswith('* '):
-                    text = line[2:].strip()
-                    self.cell(10)  # Indent
-                    self.multi_cell(0, 10, txt='• ' + text)
-                # Numbered lists
-                elif re.match(r'\d+\.', line):
-                    self.cell(10)  # Indent
-                    self.multi_cell(0, 10, txt=line)
                 else:
-                    # Regular paragraph
-                    self.multi_cell(0, 10, txt=line)
+                    # Determine if the line is a bullet point or numbered list
+                    indent = False
+                    if line.startswith('- ') or line.startswith('* '):
+                        text = line[2:].strip()
+                        bullet = '• '
+                        indent = True
+                    elif re.match(r'\d+\.', line):
+                        # Numbered list
+                        match = re.match(r'(\d+\.)\s*(.*)', line)
+                        if match:
+                            bullet = match.group(1) + ' '
+                            text = match.group(2)
+                            indent = True
+                        else:
+                            bullet = ''
+                            text = line
+                    else:
+                        bullet = ''
+                        text = line
+
+                    if indent:
+                        self.cell(10)  # Indent
+
+                    # Combine bullet and text
+                    combined_text = bullet + text
+
+                    # Split the text by bold and italic markers
+                    tokens = re.split(pattern, combined_text)
+                    for token in tokens:
+                        if not token:
+                            continue
+                        # Bold and Italic (***text*** or ___text___)
+                        if re.match(r'(\*\*\*.+?\*\*\*|___.+?___)', token):
+                            content = token[3:-3]
+                            self.set_font('', 'BI')
+                            self.multi_cell(0, 10, txt=content, align='L')
+                            self.set_font('', '')
+                        # Bold (**text** or __text__)
+                        elif re.match(r'(\*\*.+?\*\*|__.+?__)', token):
+                            content = token[2:-2]
+                            self.set_font('', 'B')
+                            self.multi_cell(0, 10, txt=content, align='L')
+                            self.set_font('', '')
+                        # Italic (*text* or _text_)
+                        elif re.match(r'(\*.+?\*|_.+?_)', token):
+                            content = token[1:-1]
+                            self.set_font('', 'I')
+                            self.multi_cell(0, 10, txt=content, align='L')
+                            self.set_font('', '')
+                        else:
+                            # Regular text
+                            self.multi_cell(0, 10, txt=token, align='L')
+
                     self.ln()
+
+        # No separate write_formatted_text method is defined
 
     pdf = MarkdownToPDF()
     pdf.write_markdown(result_text)
