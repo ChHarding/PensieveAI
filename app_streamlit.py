@@ -188,7 +188,6 @@ def analyze_transcripts_with_openai(prompt):
             {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions."},
             {"role": "user", "content": prompt}
     ],
-        max_tokens=128000,  # This is the max limit for token limits
         temperature=0,  # Controls creativity level
     )
     return response.choices[0].message.content
