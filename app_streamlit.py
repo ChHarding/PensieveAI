@@ -213,8 +213,8 @@ def generate_pdf(result_text):
         pdf.ln()
 
     # Save the PDF to a bytes butter
-    pdf_buffer = io.BytesIO()
-    pdf.output(pdf_buffer)
+    pdf_output = pdf.output(dest='S').encode('latin1')
+    pdf_buffer = io.BytesIO(pdf_output)
     # Move the buffer's position to the start
     pdf_buffer.seek(0)
     return pdf_buffer
