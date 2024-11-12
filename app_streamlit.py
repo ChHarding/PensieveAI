@@ -1,10 +1,13 @@
 import streamlit as st # pip install streamlit --upgrade
 import os
 import tempfile
-from openai import OpenAI # pip install openai on terminal
-from keys import open_ai_api_key # import OpenAI Key from keys.py
+from openai # pip install openai on terminal
+#from keys import open_ai_api_key # import OpenAI Key from keys.py
 import docx # pip install python-docx on terminal
 import PyPDF2  # pip install PyPDF2 on terminal
+
+# set the api key from secrets.toml file
+openai.api_key = st.secrets["open_ai_api_key"]
 
 # Set page configuration
 st.set_page_config(
@@ -179,7 +182,7 @@ def generate_prompt(transcripts, instruction):
 
 # Define a function that sends prompt to OpenAI API for analysis using "gpt-4o-mini"
 def analyze_transcripts_with_openai(prompt):
-    response = client.chat.completions.create(
+    response = openai.chat.completions.create(
         model="gpt-4o-mini",  # Using gpt-4o-mini model for thematic analysis
         messages=[
             {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions."},
@@ -189,11 +192,6 @@ def analyze_transcripts_with_openai(prompt):
         temperature=0,  # Controls creativity level
     )
     return response.choices[0].message.content
-
-# Instantiate a Python API client that configures the environment for communicating with OpenAI api
-client = OpenAI(
-        api_key=open_ai_api_key
-    )
 
 # Function to display the dashboard page
 def dashboard():
