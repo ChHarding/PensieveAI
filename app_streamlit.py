@@ -252,7 +252,7 @@ def dashboard():
     # Header
     st.markdown('<div class="dashboard-header">', unsafe_allow_html=True)
     st.markdown('<h1>Pensieve<span class="highlight">AI</span> Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="welcome">Unlock the magic within your qualitative data with PensieveAI!<br><br>Just like a wizard&#39;s Pensieve, this platform reveals hidden themes within your data instantly. Not only that, you get rich excerpts for each theme that bring your findings to life. Add your own instructions to personalize the analysis and create a research experience that&#39;s truly magical."</p>', unsafe_allow_html=True)
+    st.markdown('<p class="welcome">Unlock the magic within your qualitative data with PensieveAI!<br><br>Just like a wizard&#39;s Pensieve, this platform reveals hidden themes within your data instantly. Not only that, you get rich excerpts for each theme that bring your findings to life. Add your own instructions to personalize the analysis and create a research experience that&#39;s truly magical.</p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
     # File uploader section
