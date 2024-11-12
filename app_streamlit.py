@@ -207,7 +207,7 @@ def generate_pdf(result_text):
             self.set_auto_page_break(auto=True, margin=15)
             self.set_font("Arial", size=12)
         
-         def write_markdown(self, markdown_text):
+        def write_markdown(self, markdown_text):
             # Regular expression pattern for bold and italic text
             pattern = r'(\*\*\*.+?\*\*\*|___.+?___|\*\*.+?\*\*|__.+?__|\*.+?\*|_.+?_)'
             lines = markdown_text.split('\n')
