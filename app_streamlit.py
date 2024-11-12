@@ -1,10 +1,11 @@
 import streamlit as st # pip install streamlit --upgrade
 import os
 import tempfile
+import io
 from openai import OpenAI# pip install openai on terminal
-#from keys import open_ai_api_key # import OpenAI Key from keys.py
 import docx # pip install python-docx on terminal
 import PyPDF2  # pip install PyPDF2 on terminal
+from fpdf import FPDF # pip install fpdf on terminal
 
 # set the api key from secrets.toml file
 open_ai_api_key = st.secrets["open_ai_api_key"]
@@ -125,7 +126,7 @@ def save_uploaded_file(uploaded_file, temp_dir):
         # Return the folder path so that all documentes inside it can be read
         return temp_dir
     except Exception as e:
-        st.error(f"Error saving file '{uploaded_file.name}': {e}")
+        st.error(f"Error saving uploaded file in temporary directory'{uploaded_file.name}': {e}")
         return None
 
 # Function to read .txt files
@@ -195,6 +196,29 @@ def analyze_transcripts_with_openai(prompt):
 client = OpenAI(
         api_key=open_ai_api_key
     )
+
+# Function to generate PDF from OpenAI results
+def generate_pdf(result_text):
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_auto_page_break(auto=True, margin=15)
+    pdf.set_font("Arial", size=12)
+
+    # Split the result_text into paragraphs
+    paragraphs = result_text.split('\n\n')
+    for paragraph in paragraphs:
+        lines = paragraph.split('\n')
+        for line in lines:
+            pdf.multi_cell(0, 10, txt = line)
+        pdf.ln()
+
+    # Save the PDF to a bytes butter
+    pdf_buffer = io.BytesIO()
+    pdf.output(pdf_buffer)
+    # Move the buffer's position to the start
+    pdf_buffer.seek(0)
+    return pdf_buffer
+
 
 # Function to display the dashboard page
 def dashboard():
@@ -316,8 +340,22 @@ def dashboard():
                 try:
                     result = analyze_transcripts_with_openai(prompt)
                     st.success("Analysis Complete!")
+
+                    # Print the results
                     st.markdown("### Thematic Analysis Results:")
                     st.markdown(result)
+
+                    # Generate a PDF version of results
+                    pdf_buffer = generate_pdf(result)
+
+                    # Provide a download button
+                    st.download_button(
+                        label="Download Results as PDF",
+                        data=pdf_buffer,
+                        file_name="analysis_results.pdf",
+                        mime="application/pdf"
+                    )
+
                 except Exception as e:
                     st.error(f"Error interacting with OpenAI API: {e}")
                     
