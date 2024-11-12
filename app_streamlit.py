@@ -173,8 +173,7 @@ def generate_prompt(transcripts, instruction):
     for i, transcript in enumerate(transcripts):
         prompt += f"Transcript {i+1}:\n{transcript}\n\n"
     
-    prompt += "Please provide the major themes along with their descriptions. In each description, include one or more excerpts from participants that align with the theme. Also, if any, return any unusual excerpts containing comment from any participant that does not align none of the themes."
-    
+    prompt += "Please provide the major themes along with their descriptions. In each description, include one or more excerpts from participants that align with the theme."
     # Include the instruction provided by the user in the prompt to allow customization in analysis
     prompt += instruction
 
@@ -253,7 +252,7 @@ def dashboard():
     # Header
     st.markdown('<div class="dashboard-header">', unsafe_allow_html=True)
     st.markdown('<h1>Pensieve<span class="highlight">AI</span> Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="welcome">Welcome to the dashboard!</p>', unsafe_allow_html=True)
+    st.markdown('<p class="welcome">Perform thematic analysis on your qualitative data in an instant! PensieveAI provides you major themes along with rich excerpts for each theme. Provide additional instructions to customize your analysis.</p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
     # File uploader section
