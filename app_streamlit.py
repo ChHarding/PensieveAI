@@ -6,6 +6,7 @@ from openai import OpenAI# pip install openai on terminal
 import docx # pip install python-docx on terminal
 import PyPDF2  # pip install PyPDF2 on terminal
 from fpdf import FPDF # pip install fpdf on terminal
+import re
 
 # set the api key from secrets.toml file
 open_ai_api_key = st.secrets["open_ai_api_key"]
@@ -197,20 +198,52 @@ client = OpenAI(
         api_key=open_ai_api_key
     )
 
-# Function to generate PDF from OpenAI results
+# Function to generate PDF from result
 def generate_pdf(result_text):
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_auto_page_break(auto=True, margin=15)
-    pdf.set_font("Arial", size=12)
+    class MarkdownToPDF(FPDF):
+        def __init__(self):
+            super().__init__()
+            self.add_page()
+            self.set_auto_page_break(auto=True, margin=15)
+            self.set_font("Arial", size=12)
+        
+        def write_markdown(self, markdown_text):
+            lines = markdown_text.split('\n')
+            for line in lines:
+                line = line.strip()
+                if not line:
+                    continue  # Skip empty lines
+                # Heading
+                if line.startswith('#'):
+                    level = len(re.match(r'#+', line).group(0))
+                    text = line[level:].strip()
+                    if level == 1:
+                        self.set_font("Arial", 'B', 16)
+                    elif level == 2:
+                        self.set_font("Arial", 'B', 14)
+                    elif level == 3:
+                        self.set_font("Arial", 'B', 12)
+                    else:
+                        self.set_font("Arial", 'B', 12)
+                    self.multi_cell(0, 10, txt=text)
+                    self.ln()
+                    self.set_font("Arial", size=12)
+                # Bullet points
+                elif line.startswith('- ') or line.startswith('* '):
+                    text = line[2:].strip()
+                    self.cell(10)  # Indent
+                    self.multi_cell(0, 10, txt='• ' + text)
+                # Numbered lists
+                elif re.match(r'\d+\.', line):
+                    self.cell(10)  # Indent
+                    self.multi_cell(0, 10, txt=line)
+                else:
+                    # Regular paragraph
+                    self.multi_cell(0, 10, txt=line)
+                    self.ln()
 
-    # Split the result_text into paragraphs
-    paragraphs = result_text.split('\n\n')
-    for paragraph in paragraphs:
-        lines = paragraph.split('\n')
-        for line in lines:
-            pdf.multi_cell(0, 10, txt = line)
-        pdf.ln()
+    pdf = MarkdownToPDF()
+    pdf.write_markdown(result_text)
 
     # Save the PDF to a bytes butter
     pdf_output = pdf.output(dest='S').encode('latin1')
