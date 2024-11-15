@@ -293,9 +293,9 @@ def generate_pdf(result_text):
     pdf.write_markdown(result_text)
 
   # Save the PDF to a bytes buffer
-    pdf_buffer = io.BytesIO()
-    pdf.output(pdf_buffer)
-    pdf_buffer.seek(0)  # Move the buffer's position to the start
+    pdf_bytes = pdf.output(dest='B')  # 'B' returns as bytes
+    pdf_buffer = io.BytesIO(pdf_bytes)
+    pdf_buffer.seek(0)
     return pdf_buffer
   
 
