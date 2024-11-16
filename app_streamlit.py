@@ -203,19 +203,21 @@ client = OpenAI(
 # Convert markdown output from OpenAI to plain text
 def markdown_to_text(markdown_string): # OpenAI reponse comes in the form of formatted markdown
     """Converts a markdown string to plain text"""
+    try:
+        # converting markdown to html first as Beautiful Soup can extract text cleanly
+        html = markdown(markdown_string)
 
-    # converting markdown to html first as Beautiful Soup can extract text cleanly
-    html = markdown(markdown_string)
+        # remove code snippets
+        html = re.sub(r'<pre>(.*?)</pre>', ' ', html, flags=re.DOTALL)
+        html = re.sub(r'<code>(.*?)</code>', ' ', html, flags=re.DOTALL)
 
-    # remove code snippets
-    html = re.sub(r'<pre>(.*?)</pre>', ' ', html, flags=re.DOTALL)
-    html = re.sub(r'<code>(.*?)</code>', ' ', html, flags=re.DOTALL)
+        # extract text
+        soup = BeautifulSoup(html, "html.parser")
+        text = ''.join(soup.findAll(string=True))
 
-    # extract text
-    soup = BeautifulSoup(html, "html.parser")
-    text = ''.join(soup.findAll(string=True))
-
-    return text
+        return text
+    except Exception as e:
+        print(f"An error during converting to PDF: {e}")
 
 # Function to generate PDF from text
 def generate_pdf(markdown_text): 
