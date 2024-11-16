@@ -231,7 +231,7 @@ def generate_pdf(markdown_text):
     return pdf_buffer
 
 # function to convert the markdown to PDF
-def markdown_to_pdf(markdown_content)
+def markdown_to_pdf(markdown_content):
     plain_text = markdown_to_text(markdown_content)
     pdf_buffer = generate_pdf(plain_text)
     return pdf_buffer
