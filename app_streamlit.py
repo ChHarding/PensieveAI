@@ -206,6 +206,7 @@ def markdown_to_text(markdown_string): # OpenAI reponse comes in the form of for
 
     # converting markdown to html first as Beautiful Soup can extract text cleanly
     html = markdown(markdown_string)
+    text = ""
 
     # remove code snippets
     html = re.sub(r'<pre>(.*?)</pre>', ' ', html, flags=re.DOTALL)
