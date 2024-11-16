@@ -1,11 +1,13 @@
 import streamlit as st # pip install streamlit --upgrade
-import os
-import tempfile
-import io
 from openai import OpenAI# pip install openai on terminal
 import docx # pip install python-docx on terminal
 import PyPDF2  # pip install PyPDF2 on terminal
 from fpdf import FPDF # pip install fpdf on terminal
+from markdown import markdown # pip install markdown on terminal
+from bs4 import BeautifulSoup # pip install bs4 on terminal
+import os
+import tempfile
+import io
 import re
 
 # set the api key from secrets.toml file
@@ -198,59 +200,41 @@ client = OpenAI(
         api_key=open_ai_api_key
     )
 
-# Function to generate PDF from result
-def generate_pdf(result_text):
-    class MarkdownToPDF(FPDF):
-        def __init__(self):
-            super().__init__()
-            self.add_page()
-            self.set_auto_page_break(auto=True, margin=20)
-            self.set_font("Arial", size=12)
-        
-        def write_markdown(self, markdown_text):
-            lines = markdown_text.split('\n')
-            for line in lines:
-                line = line.strip()
-                if not line:
-                    continue  # Skip empty lines
-                # Heading
-                if line.startswith('#'):
-                    level = len(re.match(r'#+', line).group(0))
-                    text = line[level:].strip()
-                    if level == 1:
-                        self.set_font("Arial", 'B', 16)
-                    elif level == 2:
-                        self.set_font("Arial", 'B', 14)
-                    elif level == 3:
-                        self.set_font("Arial", 'B', 12)
-                    else:
-                        self.set_font("Arial", 'B', 12)
-                    self.multi_cell(0, 10, txt=text)
-                    self.ln()
-                    self.set_font("Arial", size=12)
-                # Bullet points
-                elif line.startswith('- ') or line.startswith('* '):
-                    text = line[2:].strip()
-                    self.cell(10)  # Indent
-                    self.multi_cell(0, 10, txt='• ' + text)
-                # Numbered lists
-                elif re.match(r'\d+\.', line):
-                    self.cell(10)  # Indent
-                    self.multi_cell(0, 10, txt=line)
-                else:
-                    # Regular paragraph
-                    self.multi_cell(0, 10, txt=line)
-                    self.ln()
+# Convert markdown output from OpenAI to plain text
+def markdown_to_text(markdown_string): # OpenAI reponse comes in the form of formatted markdown
+    """Converts a markdown string to plain text"""
 
-    pdf = MarkdownToPDF()
-    pdf.write_markdown(result_text)
+    # converting markdown to html first as Beautiful Soup can extract text cleanly
+    html = markdown(markdown_string)
 
-  # Save the PDF to a bytes buffer
+    # remove code snippets
+    html = re.sub(r'<pre>(.*?)</pre>', ' ', html, flags=re.DOTALL)
+    html = re.sub(r'<code>(.*?)</code>', ' ', html, flags=re.DOTALL)
+
+    # extract text
+    soup = BeautifulSoup(html, "html.parser")
+    text = ''.join(soup.findAll(text=True))
+
+    return text
+
+# Function to generate PDF from text
+def generate_pdf(markdown_text): 
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Helvetica", size=12)
+    pdf.multi_cell(0, 10, txt = text)
+
+    # Save the PDF to a bytes buffer
     pdf_bytes = pdf.output(dest='B')  # 'B' returns as bytes
     pdf_buffer = io.BytesIO(pdf_bytes)
     pdf_buffer.seek(0)
     return pdf_buffer
 
+# function to convert the markdown to PDF
+def markdown_to_pdf(markdown_content)
+    plain_text = markdown_to_text(markdown_content)
+    pdf_buffer = generate_pdf(plain_text)
+    return pdf_buffer
 
 # Function to display the dashboard page
 def dashboard():
@@ -378,7 +362,7 @@ def dashboard():
                     st.markdown(result)
 
                     # Generate a PDF version of results
-                    pdf_buffer = generate_pdf(result)
+                    pdf_buffer = markdown_to_pdf(result) # results from OpenAI comes in markdown format
 
                     # Provide a download button
                     st.download_button(
