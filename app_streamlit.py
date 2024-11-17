@@ -227,7 +227,7 @@ def generate_pdf(markdown_text):
     pdf.multi_cell(0, 10, text = markdown_text)
 
     # Save the PDF to a bytes buffer
-    pdf_bytes = pdf.output()  
+    pdf_bytes = pdf.output(dest='S').encode('latin1') 
     pdf_buffer = io.BytesIO(pdf_bytes)
     pdf_buffer.seek(0)
     return pdf_buffer
