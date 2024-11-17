@@ -224,7 +224,7 @@ def generate_pdf(markdown_text):
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Helvetica", size=12)
-    pdf.multi_cell(0, 10, text = markdown_text)
+    pdf.multi_cell(0, 10, txt = markdown_text)
 
     # Save the PDF to a bytes buffer
     pdf_bytes = pdf.output(dest='S').encode('latin1') 
