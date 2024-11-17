@@ -224,11 +224,10 @@ def generate_pdf(markdown_text):
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Helvetica", size=12)
-    pdf.multi_cell(0, 10, txt = markdown_text)
+    pdf.multi_cell(0, 10, text = markdown_text)
 
     # Save the PDF to a bytes buffer
-    pdf_str = pdf.output(dest='S')  # 'S' returns as string
-    pdf_bytes = pdf_str.encode('utf-8') # Encode to bytes
+    pdf_bytes = pdf.output()  
     pdf_buffer = io.BytesIO(pdf_bytes)
     pdf_buffer.seek(0)
     return pdf_buffer
