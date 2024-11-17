@@ -208,8 +208,8 @@ def markdown_to_text(markdown_string): # OpenAI reponse comes in the form of for
         html = markdown(markdown_string)
 
         # remove code snippets
-        #html = re.sub(r'<pre>(.*?)</pre>', ' ', html, flags=re.DOTALL)
-        #html = re.sub(r'<code>(.*?)</code>', ' ', html, flags=re.DOTALL)
+        html = re.sub(r'<pre>(.*?)</pre>', ' ', html, flags=re.DOTALL)
+        html = re.sub(r'<code>(.*?)</code>', ' ', html, flags=re.DOTALL)
 
         # extract text
         soup = BeautifulSoup(html, "html.parser")
