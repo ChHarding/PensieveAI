@@ -1,10 +1,17 @@
 import streamlit as st # pip install streamlit --upgrade
-import os
-import tempfile
-from openai import OpenAI # pip install openai on terminal
-from keys import open_ai_api_key # import OpenAI Key from keys.py
+from openai import OpenAI# pip install openai on terminal
 import docx # pip install python-docx on terminal
 import PyPDF2  # pip install PyPDF2 on terminal
+from fpdf import FPDF # pip install fpdf on terminal
+from markdown import markdown # pip install markdown on terminal
+from bs4 import BeautifulSoup # pip install bs4 on terminal
+import os
+import tempfile
+import io
+import re
+
+# set the api key from secrets.toml file
+open_ai_api_key = st.secrets["open_ai_api_key"]
 
 # Set page configuration
 st.set_page_config(
@@ -122,7 +129,7 @@ def save_uploaded_file(uploaded_file, temp_dir):
         # Return the folder path so that all documentes inside it can be read
         return temp_dir
     except Exception as e:
-        st.error(f"Error saving file '{uploaded_file.name}': {e}")
+        st.error(f"Error saving uploaded file in temporary directory'{uploaded_file.name}': {e}")
         return None
 
 # Function to read .txt files
@@ -170,8 +177,7 @@ def generate_prompt(transcripts, instruction):
     for i, transcript in enumerate(transcripts):
         prompt += f"Transcript {i+1}:\n{transcript}\n\n"
     
-    prompt += "Please provide the major themes along with their descriptions. In each description, include one or more excerpts from participants that align with the theme. Also, if any, return any unusual excerpts containing comment from any participant that does not align none of the themes."
-    
+    prompt += "Please provide the major themes along with their descriptions. In each description, include one or more excerpts from participants that align with the theme."
     # Include the instruction provided by the user in the prompt to allow customization in analysis
     prompt += instruction
 
@@ -185,7 +191,6 @@ def analyze_transcripts_with_openai(prompt):
             {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions."},
             {"role": "user", "content": prompt}
     ],
-        max_tokens=16384,  # This is the max limit for token limits
         temperature=0,  # Controls creativity level
     )
     return response.choices[0].message.content
@@ -194,6 +199,44 @@ def analyze_transcripts_with_openai(prompt):
 client = OpenAI(
         api_key=open_ai_api_key
     )
+
+# Convert markdown output from OpenAI to plain text
+def markdown_to_text(markdown_string): # OpenAI reponse comes in the form of formatted markdown
+    """Converts a markdown string to plain text"""
+    try:
+        # converting markdown to html first as Beautiful Soup can extract text cleanly
+        html = markdown(markdown_string)
+
+        # remove code snippets
+        html = re.sub(r'<pre>(.*?)</pre>', ' ', html, flags=re.DOTALL)
+        html = re.sub(r'<code>(.*?)</code>', ' ', html, flags=re.DOTALL)
+
+        # extract text
+        soup = BeautifulSoup(html, "html.parser")
+        text = ''.join(soup.findAll(string=True))
+
+        return text
+    except Exception as e:
+        print(f"An error during converting to PDF: {e}")
+
+# Function to generate PDF from text
+def generate_pdf(markdown_text): 
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Helvetica", size=12)
+    pdf.multi_cell(0, 10, txt = markdown_text)
+
+    # Save the PDF to a bytes buffer
+    pdf_bytes = pdf.output(dest='S').encode('latin-1') 
+    pdf_buffer = io.BytesIO(pdf_bytes)
+    pdf_buffer.seek(0)
+    return pdf_buffer
+
+# function to convert the markdown to PDF
+def markdown_to_pdf(markdown_content):
+    plain_text = markdown_to_text(markdown_content)
+    pdf_buffer = generate_pdf(plain_text)
+    return pdf_buffer
 
 # Function to display the dashboard page
 def dashboard():
@@ -251,7 +294,7 @@ def dashboard():
     # Header
     st.markdown('<div class="dashboard-header">', unsafe_allow_html=True)
     st.markdown('<h1>Pensieve<span class="highlight">AI</span> Dashboard</h1>', unsafe_allow_html=True)
-    st.markdown('<p class="welcome">Welcome to the dashboard!</p>', unsafe_allow_html=True)
+    st.markdown('<p class="welcome">Unlock the magic within your qualitative data with PensieveAI!<br><br>Just like a wizard&#39;s Pensieve, this platform reveals hidden themes within your data instantly. Not only that, you get rich excerpts for each theme that bring your findings to life. Add your own instructions to personalize the analysis and create a research experience that&#39;s truly magical.<br><br>Read the results here or download a PDF report.</p>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
     # File uploader section
@@ -270,7 +313,7 @@ def dashboard():
         # Input for additional instructions
         instruction = st.text_area("Enter additional instructions (optional):", height=100)
 
-        submit_files = st.form_submit_button("Submit Files")
+        submit_files = st.form_submit_button("Analyze")
 
     if submit_files:
         if uploaded_files:
@@ -315,8 +358,22 @@ def dashboard():
                 try:
                     result = analyze_transcripts_with_openai(prompt)
                     st.success("Analysis Complete!")
+
+                    # Print the results
                     st.markdown("### Thematic Analysis Results:")
                     st.markdown(result)
+
+                    # Generate a PDF version of results
+                    pdf_buffer = markdown_to_pdf(result) # results from OpenAI comes in markdown format
+
+                    # Provide a download button
+                    st.download_button(
+                        label="Download Results as PDF",
+                        data=pdf_buffer,
+                        file_name="analysis_results.pdf",
+                        mime="application/pdf"
+                    )
+
                 except Exception as e:
                     st.error(f"Error interacting with OpenAI API: {e}")
                     
