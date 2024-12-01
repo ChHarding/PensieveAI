@@ -364,7 +364,7 @@ def dashboard():
                 if prompt_word_count <= 85000:
                     st.info(f"{prompt_word_count} words used out of 85,000 word limit.")
                 else:
-                    st.info(f"{prompt_word_count} words used out of 85,000 word limit. The result does not include all your data. Please keep the word count below 85,000 words.")
+                    st.info(f"{prompt_word_count} words used out of 85,000 word limit. Please keep the word count below 85,000 words.")
 
                 # Display a message indicating that analysis is in progress
                 st.info("Analyzing transcripts... Please wait.")
