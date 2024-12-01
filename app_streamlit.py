@@ -361,7 +361,7 @@ def dashboard():
                 prompt_word_count = calculate_word_count(prompt)
                 
                 # Display the prompt word count
-                st.info(f"{prompt_word_count} **words / 90,000 word limit.** ")
+                st.info(f"{prompt_word_count} words used out of 85,000 word limit.")
 
                 # Display a message indicating that analysis is in progress
                 st.info("Analyzing transcripts... Please wait.")
