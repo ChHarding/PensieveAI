@@ -5,6 +5,8 @@ import PyPDF2  # pip install PyPDF2 on terminal
 from fpdf import FPDF # pip install fpdf on terminal
 from markdown import markdown # pip install markdown on terminal
 from bs4 import BeautifulSoup # pip install bs4 on terminal
+import markdown2 # pip install markdown2
+import pdfkit # pip install pdfkit
 import os
 import tempfile
 import io
@@ -227,7 +229,7 @@ def generate_pdf(markdown_text):
     pdf.multi_cell(0, 10, txt = markdown_text)
 
     # Save the PDF to a bytes buffer
-    pdf_bytes = pdf.output(dest='S').encode('utf-8')
+    pdf_bytes = pdf.output(dest='S').encode('iso-8859-1')
     pdf_buffer = io.BytesIO(pdf_bytes)
     pdf_buffer.seek(0)
     return pdf_buffer
