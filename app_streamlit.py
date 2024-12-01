@@ -183,6 +183,12 @@ def generate_prompt(transcripts, instruction):
 
     return prompt
 
+def calculate_word_count(text):
+    """
+    Calculates the word count of a given text.
+    """
+    return len(text.split())
+
 # Define a function that sends prompt to OpenAI API for analysis using "gpt-4o-mini"
 def analyze_transcripts_with_openai(prompt):
     response = client.chat.completions.create(
@@ -350,6 +356,12 @@ def dashboard():
             else:
                 # Generate the prompt
                 prompt = generate_prompt(transcripts, instruction)
+
+                # Calculate the word count of the prompt
+                prompt_word_count = calculate_word_count(prompt)
+                
+                # Display the prompt word count
+                st.info(f"**Word count of the generated prompt:** {prompt_word_count}")
                 
                 # Display a message indicating that analysis is in progress
                 st.info("Analyzing transcripts... Please wait.")
