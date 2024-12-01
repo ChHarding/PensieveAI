@@ -2,8 +2,9 @@ import streamlit as st # pip install streamlit --upgrade
 from openai import OpenAI# pip install openai on terminal
 import docx # pip install python-docx on terminal
 import PyPDF2  # pip install PyPDF2 on terminal
-import markdown2 # pip install markdown2
-import pdfkit # pip install pdfkit
+from fpdf import FPDF # pip install fpdf on terminal
+from markdown import markdown # pip install markdown on terminal
+from bs4 import BeautifulSoup # pip install bs4 on terminal
 import os
 import tempfile
 import io
@@ -199,39 +200,43 @@ client = OpenAI(
         api_key=open_ai_api_key
     )
 
-# Function to convert markdown content to PDF
-def markdown_to_pdf(markdown_content):
-    """
-    Converts markdown content to a PDF file using markdown2 and pdfkit.
-    """
+# Convert markdown output from OpenAI to plain text
+def markdown_to_text(markdown_string): # OpenAI reponse comes in the form of formatted markdown
+    """Converts a markdown string to plain text"""
     try:
-        # Convert Markdown to HTML using markdown2
-        html_content = markdown2.markdown(markdown_content)
+        # converting markdown to html first as Beautiful Soup can extract text cleanly
+        html = markdown(markdown_string)
 
-        # Define temporary file paths
-        temp_html_file = tempfile.NamedTemporaryFile(delete=False, suffix=".html").name
-        temp_pdf_file = tempfile.NamedTemporaryFile(delete=False, suffix=".pdf").name
+        # remove code snippets
+        html = re.sub(r'<pre>(.*?)</pre>', ' ', html, flags=re.DOTALL)
+        html = re.sub(r'<code>(.*?)</code>', ' ', html, flags=re.DOTALL)
 
-        # Save HTML content to a temporary file
-        with open(temp_html_file, 'w', encoding='utf-8') as f:
-            f.write(html_content)
+        # extract text
+        soup = BeautifulSoup(html, "html.parser")
+        text = ''.join(soup.findAll(string=True))
 
-        # Convert HTML to PDF using pdfkit
-        pdfkit.from_file(temp_html_file, temp_pdf_file)
-
-        # Read the generated PDF file into a bytes buffer
-        with open(temp_pdf_file, 'rb') as pdf_file:
-            pdf_buffer = io.BytesIO(pdf_file.read())
-
-        # Clean up temporary files
-        os.remove(temp_html_file)
-        os.remove(temp_pdf_file)
-
-        return pdf_buffer
+        return text
     except Exception as e:
-        st.error(f"Error during Markdown to PDF conversion: {e}")
-        return None
+        print(f"An error during converting to PDF: {e}")
 
+# Function to generate PDF from text
+def generate_pdf(markdown_text): 
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Helvetica", size=12)
+    pdf.multi_cell(0, 10, txt = markdown_text)
+
+    # Save the PDF to a bytes buffer
+    pdf_bytes = pdf.output(dest='S').encode('iso-8859-1')
+    pdf_buffer = io.BytesIO(pdf_bytes)
+    pdf_buffer.seek(0)
+    return pdf_buffer
+
+# function to convert the markdown to PDF
+def markdown_to_pdf(markdown_content):
+    plain_text = markdown_to_text(markdown_content)
+    pdf_buffer = generate_pdf(plain_text)
+    return pdf_buffer
 
 # Function to display the dashboard page
 def dashboard():
