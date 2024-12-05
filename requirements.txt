@@ -1,5 +1,5 @@
 # These non-standard packages are needed to run app_streamlit.py
-# To install them, type this into your console:
+# To install them, type this into your terminal:
 # pip install --upgrade -r requirements.txt
 
 streamlit

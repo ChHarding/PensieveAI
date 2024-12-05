@@ -1,18 +1,36 @@
-import streamlit as st # pip install streamlit --upgrade on terminal
-from openai import OpenAI# pip install openai --upgrade on terminal
-import docx # pip install python-docx --upgrade on terminal
-import PyPDF2  # pip install PyPDF2 --upgrade on terminal
-import markdown2 # pip install markdown2 --upgrade on terminal
-from xhtml2pdf import pisa # pip install xhtml2pdf --upgrade on terminal
+"""
+This Streamlit application, "PensieveAI", provides a user interface for uploading
+and analyzing qualitative data transcripts using OpenAI's GPT 4o-mini models. Users 
+authenticate with a passcode and, upon successful entry, can upload multiple text-based 
+files (.txt, .docx, .pdf). The app sends these transcripts to the OpenAI API to identify 
+major themes along with excerpts that illuminate these themes.
+
+Features:
+- User authentication with a passcode.
+- File uploads (txt, docx, pdf).
+- Thematic analysis of uploaded transcripts using OpenAI GPT models.
+- Custom instructions to guide thematic analysis.
+- Display of analysis results and option to download a PDF report.
+- Simple word count and file size constraints included.
+"""
+
+# import all required modules
+
+import streamlit as st # For web interface and UI elements
+from openai import OpenAI 
+import docx # For reading .docx files
+import PyPDF2  # For reading .pdf files
+import markdown2 # For converting Markdown to HTML
+from xhtml2pdf import pisa # For converting HTML to PDF
 import os
 import tempfile
 import io
 import re
 
-# set the api key from secrets.toml file uploaded on Streamlit
+# Set the OpenAI API key from secrets.toml file 
 open_ai_api_key = st.secrets["open_ai_api_key"]
 
-# Set page configuration
+# Set page configuration for Streamlit
 st.set_page_config(
     page_title="PensieveAI",
     page_icon="✨",
@@ -20,15 +38,24 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-# Set the secret passcode
-PASSCODE = 'Portkey'  # The passcode users must enter to get past the landing page and access the dashboard
+# Set the secret passcode that users must enter to access the dashboard
+PASSCODE = 'Portkey'  
 
-# Initialize session state for authentication
+# Initialize session state for tracking authentication status
 if 'authenticated' not in st.session_state:
     st.session_state.authenticated = False
 
 # Function to display the passcode entry page
 def passcode_entry():
+    """
+    Display the landing page where the user is prompted to enter the passcode.
+    
+    If the user provides the correct passcode, `authenticated` in the session state is 
+    set to True and the dashboard is displayed. Otherwise, an error message is shown.
+
+    The page also includes stylized HTML and CSS for a clean and thematic look.
+    """
+    
     # Apply custom CSS styles
     st.markdown(
         """
@@ -81,7 +108,7 @@ def passcode_entry():
         unsafe_allow_html=True
     )
 
-    # Page Title and Description outside the container
+    # Page title and description 
     st.markdown('<h1 class="title">✨Pensieve<span class="highlight">AI</span></h1>', unsafe_allow_html=True)
     st.markdown(
         '''
@@ -101,7 +128,7 @@ def passcode_entry():
         st.form_submit_button('Submit') #submit button
         st.write("No, 'Alohomora' won't work here!")
 
-    # If passcode is entered, check if it's correct
+    # Validate passcode and update session state
     if passcode:
         if passcode == PASSCODE:
             st.session_state.authenticated = True
@@ -114,16 +141,28 @@ def passcode_entry():
     # Footer
     st.markdown('<div class="footer">© 2024 PensieveAI. All rights reserved.</div>', unsafe_allow_html=True)
 
+
 # Function to save uploaded file in a temporary directory
 def save_uploaded_file(uploaded_file, temp_dir):
+    """
+    Save the uploaded file into a temporary directory.
+
+    Args:
+        uploaded_file (UploadedFile): The file object uploaded by the user.
+        temp_dir (str): The path to the temporary directory where the file should be saved.
+    
+    Returns:
+        str or None: The directory path if successful, otherwise None.
+
+    """
+
     try:
         # Create a full path for the file
         save_path = os.path.join(temp_dir, uploaded_file.name)
+
         # Write the file to the temporary directory
         with open(save_path, "wb") as f:
             f.write(uploaded_file.getbuffer())
-        #st.success(f"File '{uploaded_file.name}' saved to {temp_dir}")
-        #st.success("Upload is successful.")
         
         # Return the folder path so that all documentes inside it can be read
         return temp_dir
@@ -133,11 +172,31 @@ def save_uploaded_file(uploaded_file, temp_dir):
 
 # Function to read .txt files
 def read_txt(file_path):
+    """
+    Read the contents of a .txt file.
+
+    Args:
+        file_path (str): The path to the .txt file.
+    
+    Returns:
+        str: The contents of the .txt file as a string.
+    """
+
     with open(file_path, 'r', encoding='utf-8') as file:
         return file.read()
     
 # Function to read .docx files
 def read_docx(file_path):
+    """
+    Read the contents of a .docx file using python-docx.
+
+    Args:
+        file_path (str): The path to the .docx file.
+    
+    Returns:
+        str: The combined text of all paragraphs in the .docx file.
+    """
+
     doc = docx.Document(file_path)
     full_text = []
     for para in doc.paragraphs:
@@ -146,6 +205,16 @@ def read_docx(file_path):
 
 # Function to read .pdf files using PyPDF2
 def read_pdf(file_path):
+    """
+    Read the contents of a .pdf file using PyPDF2.
+
+    Args:
+        file_path (str): The path to the PDF file.
+    
+    Returns:
+        str: Extracted text content from the entire PDF.
+    """
+
     pdf_text = ""
     with open(file_path, 'rb') as file:
         reader = PyPDF2.PdfReader(file)
@@ -156,9 +225,21 @@ def read_pdf(file_path):
 
 # Function to load multiple transcript files (supporting txt, docx, pdf)
 def load_transcripts(folder_path):
+    """
+    Load transcripts from a folder, reading supported file formats (.txt, .docx, .pdf).
+
+    Args:
+        folder_path (str): Path to the folder containing transcript files.
+    
+    Returns:
+        list of str: A list of transcript texts.
+    """
+
     transcripts = []
     for filename in os.listdir(folder_path):
         file_path = os.path.join(folder_path, filename)
+
+        # Check extension and call corresponding read function
         if filename.endswith(".txt"):
             transcripts.append(read_txt(file_path))
         elif filename.endswith(".docx"):
@@ -171,12 +252,26 @@ def load_transcripts(folder_path):
 
 # Define function to generate a prompt for thematic analysis
 def generate_prompt(transcripts, instruction):
+    """
+    Generate a prompt for the OpenAI API that includes transcripts and user instructions for analysis.
+    The prompt will ask the AI to identify major themes, provide descriptions, 
+    and include excerpts from participants.
+
+    Args:
+        transcripts (list of str): A list of transcripts to be analyzed.
+        instruction (str): Additional user-provided instructions for the analysis.
+    
+    Returns:
+        str: A prompt string ready for the OpenAI API.
+    """
+
     prompt = "Here are the transcripts:\n\n"
     
     for i, transcript in enumerate(transcripts):
         prompt += f"Transcript {i+1}:\n{transcript}\n\n"
     
     prompt += "Please provide the major themes along with their descriptions. In each description, include one or more excerpts from participants that align with the theme."
+    
     # Include the instruction provided by the user in the prompt to allow customization in analysis
     prompt += instruction
 
@@ -184,19 +279,36 @@ def generate_prompt(transcripts, instruction):
 
 def calculate_word_count(text):
     """
-    Calculates the word count of a given text.
+    Calculate the word count of a given text.
+
+    Args:
+        text (str): The input text.
+    
+    Returns:
+        int: The number of words in the text.
     """
+
     return len(text.split())
 
-# Define a function that sends prompt to OpenAI API for analysis using "gpt-4o-mini"
+# Define a function that sends prompt to OpenAI API
 def analyze_transcripts_with_openai(prompt):
+    """
+    Send the generated prompt to the OpenAI API for thematic analysis using the "gpt-4o-mini" model.
+
+    Args:
+        prompt (str): The prompt containing transcripts and instructions.
+    
+    Returns:
+        str: The text content returned by the OpenAI API, representing the thematic analysis.
+    """
+
     response = client.chat.completions.create(
-        model="gpt-4o-mini",  # Using gpt-4o-mini model for thematic analysis
+        model="gpt-4o-mini",  
         messages=[
             {"role": "system", "content": "You are an expert qualitative data analyst. Your task is to analyze the following interview transcripts and identify the major themes along with detailed descriptions."},
             {"role": "user", "content": prompt}
     ],
-        temperature=0,  # Controls creativity level
+        temperature=0,  # Controls creativity level foe less random outputs
     )
     return response.choices[0].message.content
 
@@ -206,8 +318,17 @@ client = OpenAI(
     )
 
 def markdown_to_pdf(markdown_text):
-    # Convert markdown to HTML
-    html_body = markdown2.markdown(markdown_text)
+    """
+    Convert Markdown text to a PDF file (in-memory).
+
+    Args:
+        markdown_text (str): The text content in Markdown format.
+    
+    Returns:
+        BytesIO or None: A bytes buffer object containing the PDF, or None if an error occurred.
+    """
+
+    html_body = markdown2.markdown(markdown_text) # Convert markdown to HTML
 
     # Create a HTML document with custom styles to adjust the font size and styling of PDF output
     html_content = f"""
@@ -257,13 +378,13 @@ def markdown_to_pdf(markdown_text):
     # Create an in-memory bytes buffer
     pdf_buffer = io.BytesIO()
     
-    # Convert HTML to PDF
+    # Convert HTML to PDF in-memory
     pisa_status = pisa.CreatePDF(
         src=html_content,  # the HTML to convert
         dest=pdf_buffer  # file handle to receive the result
     )
     
-    # Check for errors
+    # Check for conversion errors
     if pisa_status.err:
         return None
     
@@ -274,6 +395,15 @@ def markdown_to_pdf(markdown_text):
 
 # Function to display the dashboard page
 def dashboard():
+    """
+    Display the dashboard page where authenticated users can:
+    - Upload files for thematic analysis.
+    - Enter additional instructions for analysis.
+    - View results and download them as a PDF.
+
+    The dashboard includes custom CSS styles for a clean interface.
+    """
+
     # Apply custom CSS styles
     st.markdown(
         """
@@ -325,7 +455,7 @@ def dashboard():
         st.session_state.authenticated = False
         st.rerun()
         
-    # Header
+    # Header section
     st.markdown('<div class="dashboard-header">', unsafe_allow_html=True)
     st.markdown('<h1>Pensieve<span class="highlight">AI</span> Dashboard</h1>', unsafe_allow_html=True)
     st.markdown('<p class="welcome">Unlock the magic within your qualitative data with PensieveAI!<br><br>Just like a wizard&#39;s Pensieve, this platform reveals hidden themes within your data instantly. Not only that, you get rich excerpts for each theme that bring your findings to life. Add your own instructions to personalize the analysis and create a research experience that&#39;s truly magical.<br><br>Read the results here or download a PDF report.</p>', unsafe_allow_html=True)
@@ -334,7 +464,7 @@ def dashboard():
     # File uploader section
     st.markdown('<div class="file-uploader">', unsafe_allow_html=True)
 
-    # Create a form with a submit button
+    # Create a form to allow multiple file uploads for .txt, .pdf, and .txt files
     with st.form("file_upload_form"):
         uploaded_files = st.file_uploader(
             label="Upload Your Files:",
@@ -344,7 +474,7 @@ def dashboard():
             #on_change=process_file
         )
         
-        # Input for additional instructions
+        # An optional text area for additional user instructions
         instruction = st.text_area("Enter additional instructions (optional):", height=100)
 
         submit_files = st.form_submit_button("Analyze")
@@ -356,10 +486,10 @@ def dashboard():
         if uploaded_files:
             st.markdown('<div class="file-info">', unsafe_allow_html=True)
 
-            # Create a temporary directory
+            # Create a temporary directory for uploaded files
             temp_dir = tempfile.mkdtemp()
-            #st.info(f"Temporary directory created at {temp_dir}")
 
+            # Process each uploaded file
             for uploaded_file in uploaded_files:
                 bytes_data = uploaded_file.read()
                 file_size_mb = len(bytes_data) / (1024 * 1024)
@@ -409,10 +539,10 @@ def dashboard():
                     st.markdown("### Thematic Analysis Results:")
                     st.markdown(result)
 
-                    # Generate a PDF version of results
+                    # Generate a amrkdown results to PDF
                     pdf_buffer = markdown_to_pdf(result) # convert markdown output from OpenAI to PDF
 
-                    # Provide a download button
+                    # Provide a download button for the PDF results
                     st.download_button(
                         label="Download Results as PDF",
                         data=pdf_buffer.getvalue(),
@@ -430,8 +560,10 @@ def dashboard():
     # Footer
     st.markdown('<div class="footer">© 2024 PensieveAI. All rights reserved.</div>', unsafe_allow_html=True)
 
-# Main application logic
+# Main application flow
 if st.session_state.authenticated:
+    # If user is authenticated, show the dashboard
     dashboard()
 else:
+    # Otherwise, show the passcode entry page
     passcode_entry()
