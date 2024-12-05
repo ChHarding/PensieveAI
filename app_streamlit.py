@@ -207,7 +207,52 @@ client = OpenAI(
 
 def markdown_to_pdf(markdown_text):
     # Convert markdown to HTML
-    html_content = markdown2.markdown(markdown_text)
+    html_body = markdown2.markdown(markdown_text)
+
+    # Create a full HTML document with custom styles
+    html_content = f"""
+    <html>
+    <head>
+    <style>
+    body {{
+        font-size: 12pt;
+        font-family: Arial, sans-serif;
+    }}
+    h1 {{
+        font-size: 18pt;
+        font-weight: bold;
+    }}
+    h2 {{
+        font-size: 16pt;
+        font-weight: bold;
+    }}
+    h3 {{
+        font-size: 14pt;
+        font-weight: bold;
+    }}
+    h4, h5, h6 {{
+        font-size: 12pt;
+        font-weight: bold;
+    }}
+    p {{
+        font-size: 12pt;
+    }}
+    /* Adjust styles for lists */
+    ul, ol {{
+        font-size: 12pt;
+        margin-left: 20px;
+    }}
+    li {{
+        margin-bottom: 5px;
+    }}
+    /* You can add more styles as needed */
+    </style>
+    </head>
+    <body>
+    {html_body}
+    </body>
+    </html>
+    """
     
     # Create an in-memory bytes buffer
     pdf_buffer = io.BytesIO()
