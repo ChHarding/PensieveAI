@@ -209,7 +209,7 @@ def markdown_to_pdf(markdown_text):
     # Convert markdown to HTML
     html_body = markdown2.markdown(markdown_text)
 
-    # Create a full HTML document with custom styles
+    # Create a HTML document with custom styles to adjust the font size and styling of PDF output
     html_content = f"""
     <html>
     <head>
