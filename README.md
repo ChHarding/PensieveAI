@@ -51,7 +51,7 @@ Disclaimer🔴: You must make sure this file is added to your .gitignore file.
 
 Find more information on [Streamlit Documentation](https://docs.streamlit.io/develop/concepts/connections/secrets-management).
 
-### Using the API Key
+### Extract the API Key on Main App File
 Make sure to match variable name for API key on secrets.toml file when you extract the key on main app file. e.g., "open_ai_api_key".
 <img width="1178" alt="image" src="https://github.com/user-attachments/assets/169c3d13-3e83-4c2b-a286-25cf2686b3d7">
 
