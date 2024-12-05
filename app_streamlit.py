@@ -9,7 +9,7 @@ import tempfile
 import io
 import re
 
-# set the api key from secrets.toml file
+# set the api key from secrets.toml file uploaded on Streamlit
 open_ai_api_key = st.secrets["open_ai_api_key"]
 
 # Set page configuration
@@ -21,7 +21,7 @@ st.set_page_config(
 )
 
 # Set the secret passcode
-PASSCODE = 'Portkey'  # The passcode users must enter
+PASSCODE = 'Portkey'  # The passcode users must enter to get past the landing page and access the dashboard
 
 # Initialize session state for authentication
 if 'authenticated' not in st.session_state:
