@@ -1,9 +1,10 @@
-import streamlit as st # pip install streamlit --upgrade on terminal
-from openai import OpenAI# pip install openai --upgrade on terminal
-import docx # pip install python-docx --upgrade on terminal
-import PyPDF2  # pip install PyPDF2 --upgrade on terminal
-import markdown2 # pip install markdown2 --upgrade on terminal
-from xhtml2pdf import pisa # pip install xhtml2pdf --upgrade on terminal
+import streamlit as st # pip install streamlit --upgrade
+from openai import OpenAI # pip install openai on terminal
+import docx # pip install python-docx on terminal
+import PyPDF2  # pip install PyPDF2 on terminal
+from fpdf import FPDF # pip install fpdf on terminal
+from markdown import markdown # pip install markdown on terminal
+from bs4 import BeautifulSoup # pip install bs4 on terminal
 import os
 import tempfile
 import io
@@ -205,26 +206,42 @@ client = OpenAI(
         api_key=open_ai_api_key
     )
 
-def markdown_to_pdf(markdown_text):
-    # Convert markdown to HTML
-    html_content = markdown2.markdown(markdown_text)
-    
-    # Create an in-memory bytes buffer
-    pdf_buffer = io.BytesIO()
-    
-    # Convert HTML to PDF
-    pisa_status = pisa.CreatePDF(
-        src=html_content,  # the HTML to convert
-        dest=pdf_buffer  # file handle to receive the result
-    )
-    
-    # Check for errors
-    if pisa_status.err:
-        return None
-    
-    # Move the buffer position to the beginning
+# Convert markdown output from OpenAI to plain text
+def markdown_to_text(markdown_string): # OpenAI reponse comes in the form of formatted markdown
+    """Converts a markdown string to plain text"""
+    try:
+        # converting markdown to html first as Beautiful Soup can extract text cleanly
+        html = markdown(markdown_string)
+
+        # remove code snippets
+        html = re.sub(r'<pre>(.*?)</pre>', ' ', html, flags=re.DOTALL)
+        html = re.sub(r'<code>(.*?)</code>', ' ', html, flags=re.DOTALL)
+
+        # extract text
+        soup = BeautifulSoup(html, "html.parser")
+        text = ''.join(soup.findAll(string=True))
+
+        return text
+    except Exception as e:
+        print(f"An error during converting to PDF: {e}")
+
+# Function to generate PDF from text
+def generate_pdf(markdown_text): 
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Helvetica", size=12)
+    pdf.multi_cell(0, 10, txt = markdown_text)
+
+    # Save the PDF to a bytes buffer
+    pdf_bytes = pdf.output(dest='S').encode('iso-8859-1')
+    pdf_buffer = io.BytesIO(pdf_bytes)
     pdf_buffer.seek(0)
-    
+    return pdf_buffer
+
+# function to convert the markdown to PDF
+def markdown_to_pdf(markdown_content):
+    plain_text = markdown_to_text(markdown_content)
+    pdf_buffer = generate_pdf(plain_text)
     return pdf_buffer
 
 # Function to display the dashboard page
@@ -304,9 +321,6 @@ def dashboard():
 
         submit_files = st.form_submit_button("Analyze")
 
-    # Display the maximum word limit for the text files
-    st.markdown('<p class="welcome">Total word limit for uploaded text files: 85,000</p>', unsafe_allow_html=True)
-
     if submit_files:
         if uploaded_files:
             st.markdown('<div class="file-info">', unsafe_allow_html=True)
@@ -365,12 +379,12 @@ def dashboard():
                     st.markdown(result)
 
                     # Generate a PDF version of results
-                    pdf_buffer = markdown_to_pdf(result) # convert markdown output from OpenAI to PDF
+                    pdf_buffer = markdown_to_pdf(result) # results from OpenAI comes in markdown format
 
                     # Provide a download button
                     st.download_button(
                         label="Download Results as PDF",
-                        data=pdf_buffer.getvalue(),
+                        data=pdf_buffer,
                         file_name="analysis_results.pdf",
                         mime="application/pdf"
                     )

@@ -2,8 +2,5 @@ streamlit
 openai
 python-docx
 PyPDF2
-fpdf
-bs4
-markdown
 markdown2
-pdfkit
+xhtml2pdf
