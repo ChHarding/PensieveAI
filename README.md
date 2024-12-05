@@ -12,7 +12,7 @@ _Disclaimer, if this app had not been active for a long time, it takes a few min
 You have to enter a passcode on this landing page to access the main tool. The passcode is `Portkey`.
 
 ### Main Dashboard
-<img width="1424" alt="Screenshot that shows main dashboard page for " src="https://github.com/user-attachments/assets/28377ba9-07c8-4338-8ba1-894fbf9dee4d">
+<img width="1424" alt="Screenshot that shows main dashboard page" src="https://github.com/user-attachments/assets/28377ba9-07c8-4338-8ba1-894fbf9dee4d">
 
 ### Upload Files
 <img width="1424" alt="Screenshots for uploading file" src="https://github.com/user-attachments/assets/c2bb3472-aac1-4ea1-96bc-675a9491bb55">
@@ -44,7 +44,7 @@ The tool uses OpenAI API to analyze the text data, so you should first sign up f
 
 #### Make a Secrets.toml file
 ![secrets_toml](https://github.com/user-attachments/assets/1eec1bd0-51bf-4647-be6f-df5c12c8f902)
-Under a folder .streamlit, add a secrets.toml file and assign your API key to a variable.
+Under a folder `.streamlit`, add a `secrets.toml` file and assign your API key to a variable.
 
 Disclaimer🔴: You must make sure this file is added to your .gitignore file.
 <img width="1438" alt="image" src="https://github.com/user-attachments/assets/f087fd0b-c7b2-47c1-9cf9-9fb123c03e86">
