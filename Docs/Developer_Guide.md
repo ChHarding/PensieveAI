@@ -136,7 +136,8 @@ In summary, the code flow is:
 
 ### File and Module Structure
 
-All code exists in a single `.py` file (e.g., `app_streamlit.py`). There are no classes or module hierarchies, but the structure is amenable to future refactoring into multiple modules (e.g., a module for file reading, a module for prompt generation and API calls, etc.).
+- All code exists in a single `.py` file (e.g., `app_streamlit.py`). There are no classes or module hierarchies, but the structure is amenable to future refactoring into multiple modules (e.g., a module for file reading, a module for prompt generation and API calls, etc.).
+- The `Transcripts` folder has some samples of transcripts from a project I have done in the past. Feel free to use them as sample data to run the application.
 
 ### Potential Enhancements
 
