@@ -71,4 +71,8 @@ This command will open the app on your local host.
 
 Congratulations! Now, you have your own qualitative data analyzer. If you want to customize the tool for yourself and want to get yourself familiar with the code, check the Developer's documentation.
 <br>
-If you need guidance in using the app, go to the top of this Readme file and view directions for qualitative researchers.
+Note:
+- If you need guidance in using the app, go to the top of this Readme file and view directions for qualitative researchers.
+- The `Transcripts` folder has some samples of transcripts from a project I have done in the past. Feel free to use them as sample data to run the application.
+- Refer to the `Developer's Guide` in the `Docs` folder, if you need more information about the code.
+<br>
