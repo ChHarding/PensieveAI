@@ -14,7 +14,7 @@ Features:
 - Simple word count and file size constraints included.
 """
 
-# import all required modules
+# import all required packages
 
 import streamlit as st # For web interface and UI elements
 from openai import OpenAI 
