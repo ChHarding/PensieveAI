@@ -74,5 +74,5 @@ Congratulations! Now, you have your own qualitative data analyzer. If you want t
 Note:
 - If you need guidance in using the app, go to the top of this Readme file and view directions for qualitative researchers.
 - The `Transcripts` folder has some samples of transcripts from a project I have done in the past. Feel free to use them as sample data to run the application.
-- Refers to the `Developer's Guide` in the `Docs` folder, if you need more information about the code.
+- Refer to the `Developer's Guide` in the `Docs` folder, if you need more information about the code.
 <br>
