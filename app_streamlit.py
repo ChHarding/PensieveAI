@@ -27,8 +27,7 @@ import tempfile
 import io
 import re
 
-# Set the OpenAI API key from secrets.toml file 
-open_ai_api_key = st.secrets["open_ai_api_key"]
+open_ai_api_key = st.secrets["open_ai_api_key"] # Set the OpenAI API key from secrets.toml file 
 
 # Set page configuration for Streamlit
 st.set_page_config(
@@ -157,15 +156,13 @@ def save_uploaded_file(uploaded_file, temp_dir):
     """
 
     try:
-        # Create a full path for the file
-        save_path = os.path.join(temp_dir, uploaded_file.name)
+        save_path = os.path.join(temp_dir, uploaded_file.name) # Create a full path for the file
 
         # Write the file to the temporary directory
         with open(save_path, "wb") as f:
             f.write(uploaded_file.getbuffer())
         
-        # Return the folder path so that all documentes inside it can be read
-        return temp_dir
+        return temp_dir # Return the folder path so that all documentes inside it can be read
     except Exception as e:
         st.error(f"Error saving uploaded file in temporary directory'{uploaded_file.name}': {e}")
         return None
@@ -277,6 +274,7 @@ def generate_prompt(transcripts, instruction):
 
     return prompt
 
+# Function to calculate word count for displaying word count of uploaded text files
 def calculate_word_count(text):
     """
     Calculate the word count of a given text.
