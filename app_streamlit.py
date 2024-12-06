@@ -508,6 +508,7 @@ def dashboard():
 
             st.markdown('</div>', unsafe_allow_html=True)
 
+
             # Load transcripts from the temporary directory
             transcripts = load_transcripts(temp_dir)
             if not transcripts:
@@ -525,8 +526,10 @@ def dashboard():
                 else:
                     st.info(f"{prompt_word_count} words used out of 85,000 word limit. Please keep the word count below 85,000 words.")
 
+
                 # Display a message indicating that analysis is in progress
                 st.info("Analyzing transcripts... Please wait.")
+
 
                 # Call the OpenAI API
                 try:
@@ -550,6 +553,7 @@ def dashboard():
 
                 except Exception as e:
                     st.error(f"Error interacting with OpenAI API: {e}")
+
                     
         else:
             st.warning("Please upload at least one file before submitting.")
