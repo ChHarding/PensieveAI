@@ -1,6 +1,6 @@
 """
 This Streamlit application, "PensieveAI", provides a user interface for uploading
-and analyzing qualitative data transcripts using OpenAI's GPT 4o-mini models. Users 
+and analyzing qualitative data using OpenAI's GPT 4o-mini models. Users 
 authenticate with a passcode and, upon successful entry, can upload multiple text-based 
 files (.txt, .docx, .pdf). The app sends these transcripts to the OpenAI API to identify 
 major themes along with excerpts that illuminate these themes.
