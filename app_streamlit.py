@@ -27,7 +27,11 @@ import tempfile
 import io
 import re
 
-open_ai_api_key = st.secrets["open_ai_api_key"] # Set the OpenAI API key from secrets.toml file 
+
+# Set the OpenAI API key from secrets.toml file
+open_ai_api_key = st.secrets["open_ai_api_key"]  
+# GOTCHA: For st.secrets["key_name"], key_name should match what you have in secrets.toml file
+
 
 # Set page configuration for Streamlit
 st.set_page_config(
